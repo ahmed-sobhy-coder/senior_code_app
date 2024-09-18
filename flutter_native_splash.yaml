@@ -1,13 +1,8 @@
 flutter_native_splash:
-  color: "#FFFFFF"
-  # image: assets/image/logo.png
-  # branding: assets/image/logo.png
-  android_12:
-    # image: assets/image/logo.png
-    color: "#ffffff"
-    # branding: assets/image/logo.png
-  android: true
-  ios: true
-  android_gravity: fill
-  ios_content_mode: scaleAspectFill
+  color: "#070431" 
+  image: assets/image/senior_code_native_splash.png
 
+  android_12:
+    image: assets/image/native_splash_screen_androind_12.png
+    color: "#070431"
+  android_gravity: fill
