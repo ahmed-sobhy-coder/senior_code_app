@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:senior_code_app/core/extensions.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../../core/utils/app_assets.dart';
-import '../../../../core/widgets/custome_svg_image.dart';
 
 // PlayPauseButton widget to control video playback
 class PlayPauseButton extends StatelessWidget {
