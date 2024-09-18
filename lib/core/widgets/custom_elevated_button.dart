@@ -42,17 +42,21 @@ class CustomElevatedButton extends StatelessWidget {
   }
 
   get _buildButton => ElevatedButton(
+    
         style: ElevatedButton.styleFrom(
+          
           backgroundColor: color??AppColors.primaryColor,
           elevation: elevation,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius!), side: side),
           padding: padding ?? getPadding(vertical: 13.h),
         ),
+        
         onPressed: onPressed,
         child: _buildButtonContent,
       );
 
   get _buildButtonContent => Row(
+    
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -62,7 +66,7 @@ class CustomElevatedButton extends StatelessWidget {
             text,
             textScaler:const TextScaler.linear(1),
             textAlign: TextAlign.center,
-            style: style ?? getBoldTextStyle(color: AppColors.white, fontSize: 16,),
+            style: style ?? AppStyle.getBoldTextStyle(color: AppColors.white, fontSize: 16,),
           ),
           if (rightIcon.isNotNull) rightIcon!,
         ],

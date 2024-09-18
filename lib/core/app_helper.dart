@@ -54,7 +54,7 @@ Future<String?> showPickDialog(BuildContext context, String? image) async {
     //textDirection: AppService().getBlocData<LanguageCubit>().isEn ? TextDirection.ltr : TextDirection.rtl,
     contentPadding: const EdgeInsets.symmetric(vertical: 16),
     title: AppStrings().chooseAction.trans,
-    titleTextStyle: getBoldTextStyle(fontSize: 16, color: Colors.amber),
+    titleTextStyle:AppStyle.getBoldTextStyle(fontSize: 16, color: Colors.amber),
     // builder: (_) => FilePickerDialog(isSelected: (image.isNotNull)),
   );
   if (galleryFileTypes.isNotNull) {

@@ -73,7 +73,8 @@ class AppStrings {
   final String setDropOffLocation = "Set Drop-off location";
   final String typingComment = "Typing Comment...";
   final String type = "Typing";
-
+  final String StringOnBoardingScreenText = "Find Your Passion Here!";
+  final String skip = "skip";
   final String cvv2 = "CVV";
   final String arrivingIn = "Arriving In";
   final String cancelMyTrip = "Cancel My Trip";
@@ -82,7 +83,8 @@ class AppStrings {
   final String payNow = "Pay Now";
   final String review = "Review";
   final String youHavePaied = "You have paid";
-  final String saflyRedirect = "You will be safely redirected to the main_screen \nscreen in 5 seconds.";
+  final String saflyRedirect =
+      "You will be safely redirected to the main_screen \nscreen in 5 seconds.";
   final String cash = "Cash";
   final String howWasTrip = "How was your trip?";
   final String give = "Give";
@@ -223,7 +225,8 @@ class AppStrings {
   final String vehicleArrived = "Vehicle Arrived";
   final String yourTripHasEnded = "Your trip has been completed";
 
-  final String redirectToMain = "You will be safely redirected to the bottom_navigation_screen\n screen in ";
+  final String redirectToMain =
+      "You will be safely redirected to the bottom_navigation_screen\n screen in ";
   final String rateBelow = "if Rate is Below 4, you must enter comment";
 
   static const updated = "updated";
@@ -363,7 +366,8 @@ class AppStrings {
 
   final String historyTab = 'History';
 
-  final String ifThereIsPet = 'If there is a pet, an additional 15 pounds will  be added to the trip price';
+  final String ifThereIsPet =
+      'If there is a pet, an additional 15 pounds will  be added to the trip price';
 
   final String lang = 'Language';
 
@@ -463,7 +467,8 @@ class AppStrings {
 
   final String save = 'save';
 
-  final String savingTripInfo = 'This trip will be paid in half with the driver';
+  final String savingTripInfo =
+      'This trip will be paid in half with the driver';
 
   final String savingsTrips = 'savingsTrips';
 
@@ -490,8 +495,6 @@ class AppStrings {
   final String showMap = 'showMap';
 
   final String signUp = 'signUp';
-
-  final String skip = 'skip';
 
   final String soon = 'Soon';
 
@@ -523,7 +526,8 @@ class AppStrings {
 
   final String travel = 'Travel';
 
-  final String tripCancellatioTitle = 'Are you sure you want to cancel the trip?';
+  final String tripCancellatioTitle =
+      'Are you sure you want to cancel the trip?';
 
   final String tripCancellation = 'Trip cancellation';
 
@@ -581,4 +585,8 @@ class AppStrings {
   final String backHome = "backHome";
 
   final String see = "see";
+  // ! onBoardingTexts
+  final String firstLineOnBoardingScreenTitleWord = "Find Your";
+  final String secondLineOnBoardingScreenTitleWord = "Passion";
+  final String thirdLineOnBoardingScreenTitleWord = "Here!";
 }

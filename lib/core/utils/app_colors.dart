@@ -39,7 +39,7 @@ class AppColors {
   static Color textProfileColor = const Color(0xFF3F3F3D);
   static Color grayBlue = const Color(0xFF546E7A);
   static Color green = const Color(0xFF569F63);
-  static const Color borderColor =  Color(0xFFE2E8F0);
+  static const Color borderColor = Color(0xFFE2E8F0);
 
   ///////////////////////////////////////////////
 
@@ -151,8 +151,9 @@ class AppColors {
 
 ////////////////////////////////////////////////
 
-  static  Color grayMeduimColor = '#EFEFEF'.colorFromString;
+  static Color grayMeduimColor = '#EFEFEF'.colorFromString;
 
   static const Color regularWhiteColor = Color(0xffFAFAFA);
   static const Color shadowColor3 = Color(0xff666666);
+  static const Color lighBlueColor = Color(0xff4E88B3);
 }

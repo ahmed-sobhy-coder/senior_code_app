@@ -139,7 +139,7 @@ class CustomNetworkImage extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           asset.substring(0, 2),
-          style: getBoldTextStyle(fontSize: 20.h, color: AppColors.white),
+          style: AppStyle.getBoldTextStyle(fontSize: 20.h, color: AppColors.white),
         ),
       );
     }

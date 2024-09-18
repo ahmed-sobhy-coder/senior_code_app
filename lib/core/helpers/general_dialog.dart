@@ -33,7 +33,7 @@ Future showCustomDialog({
                       alignment: Alignment.center,
                       child: Text(
                         title!,
-                        style: getSemiboldTextStyle(
+                        style: AppStyle.getSemiboldTextStyle(
                           fontSize: 20,
                           color: AppColors.titleGray,
                         ),
@@ -45,7 +45,7 @@ Future showCustomDialog({
                       space.isNotNull ? space!.vs : 4.vs,
                       Text(
                         content!,
-                        style: getMediumTextStyle(
+                        style: AppStyle.getMediumTextStyle(
                           fontSize: 16,
                           color: AppColors.titleGray,
                         ),

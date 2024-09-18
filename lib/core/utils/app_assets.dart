@@ -1,6 +1,7 @@
 mixin class SvgImages {
   static String svgPath = "assets/svg";
   String carSolid = "$svgPath/car_solid.svg";
+
   //  String qrMoney = "$svgPath/qr.svg";
 ///////////////////////////////  svg  ////////////////////////////////////
   String tripiaLogo = "$svgPath/logo.svg";
@@ -108,6 +109,9 @@ mixin class SvgImages {
   String edit = "$svgPath/edit.svg";
   String galary = "$svgPath/galary.svg";
   String department = "$svgPath/department.svg";
+  //! onBoardingSVGs 
+  String play = "$svgPath/onboarding_play_video.svg";
+
 }
 
 mixin PngImages {
@@ -154,8 +158,12 @@ mixin JsonFiles {
   String imageLoading = "$lottiePath/loadingTripia.json";
   String info = "$lottiePath/info.json";
 }
+mixin Videos {
+  static String videosPath = "assets/videos";
+String testOnBoardingVideo = "$videosPath/test.mp4";
+}
 
-class AppAssets with SvgImages, PngImages, JsonFiles {
+class AppAssets with SvgImages, PngImages, JsonFiles, Videos {
   AppAssets.__internal();
   factory AppAssets() => AppAssets.__internal();
   static String gifPath = "assets/gif";

@@ -78,7 +78,7 @@ class CustomDialog extends StatelessWidget {
                     message!,
                     softWrap: true,
                     textAlign: TextAlign.center,
-                    style: getRegularTextStyle(
+                    style: AppStyle.getRegularTextStyle(
                       // fontWeight: FontWeight.,
                       fontSize: 14,
                       color: AppColors.black,

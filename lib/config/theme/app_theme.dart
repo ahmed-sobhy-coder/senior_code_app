@@ -17,7 +17,7 @@ ThemeData appTheme() {
     textTheme: getTextTheme(),
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: getPadding(horizontal: 16.w, vertical: 0),
-      hintStyle: getMediumTextStyle(
+      hintStyle: AppStyle.getMediumTextStyle(
         color: AppColors.hintColor,
         fontSize: getFontSize(14),
         height: getFontSize(26.24) / getFontSize(14),

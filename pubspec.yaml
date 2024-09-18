@@ -103,6 +103,7 @@ flutter:
     - assets/image/
     - assets/translations/
     - assets/svg/
+    - assets/videos/
 
   fonts:
     - family: Cairo
