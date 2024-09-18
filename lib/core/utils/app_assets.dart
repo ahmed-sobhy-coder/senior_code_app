@@ -109,7 +109,7 @@ mixin class SvgImages {
   String edit = "$svgPath/edit.svg";
   String galary = "$svgPath/galary.svg";
   String department = "$svgPath/department.svg";
-  //! onBoardingSVGs 
+  //! onBoardingSVGs
   String play = "$svgPath/onboarding_play_video.svg";
 
 }

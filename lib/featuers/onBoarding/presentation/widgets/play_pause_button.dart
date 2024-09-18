@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:senior_code_app/core/extensions.dart';
 import 'package:video_player/video_player.dart';
 
 import '../../../../core/utils/app_assets.dart';
@@ -42,12 +43,17 @@ class PlayPauseButton extends StatelessWidget {
             builder: (context, isPlaying, child) {
               // Returns appropriate icon based on play state
               return isPlaying
-                  ? const Icon(
+                  ? Icon(
                       Icons.pause_circle_filled,
-                      size: 64,
+                      size: 64.r,
                       color: Colors.white,
                     ) // Pause icon
-                  : CustomSVGImage(asset: AppAssets().play); // Play icon
+                  : Icon(
+                      Icons.play_circle_fill,
+                      size: 64.r,
+                      color: Colors.white,
+                    ); // Pa
+              //  CustomSVGImage(asset: AppAssets().play); // Play icon
             },
           ),
         ),
