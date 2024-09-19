@@ -10,9 +10,10 @@ class CustomSVGImage extends StatelessWidget {
     this.matchTextDirection = true,
     this.color,
     this.fit = BoxFit.contain,
-    this.onTap,
+    this.onTap, this.width, this.height,
   });
-
+  final double? width;
+  final double? height;
   final String asset;
   final void Function()? onTap;
   final Color? color;
@@ -32,6 +33,8 @@ class CustomSVGImage extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: SvgPicture.asset(
+        width: width,
+        height: height,
         asset,
         color: color,
         fit: fit,

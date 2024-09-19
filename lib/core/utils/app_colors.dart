@@ -4,7 +4,10 @@ import 'package:senior_code_app/core/extensions.dart';
 class AppColors {
   AppColors._internal();
   static const Color primaryColor = Color(0xFF070431);
-    static const Color mainButtonBlueColor = Color(0xFF226BA1);
+  static const Color secondPrimaryColor = Color(0xFF4D81E7);
+  static const Color thirdPrimaryColor = Color(0xFF226BA1);
+
+  static const Color mainButtonBlueColor = Color(0xFF4280AE);
 
   static const Color lightGray = Color(0xFFF8F8FD);
   static const Color shammer = Color(0xffF7E0E8);
@@ -124,7 +127,6 @@ class AppColors {
 
   static const Color grayIcon = Color(0xFFA1A1A1);
   static const Color indicatorColor = Color(0xFF193B68);
-  static const Color secondPrimaryColor = Color(0xFF012676);
   static const Color textFormBackGround = Color(0xFFFBFBFB);
   static const Color semiGray = Color(0xFF6F767E);
   static const Color circleColor = Color(0xFFFFF8E9);

@@ -18,18 +18,8 @@ class SigninScreenBodySection extends StatelessWidget {
         32.vs,
         Column(
           children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Email",
-                style: AppStyle.getMediumTextStyle(
-                  color: AppColors.white,
-                ),
-              ),
-            ),
-            2.vs,
             const SigninTextFormFieldSection(),
-            217.64.vs,
+            184.vs,
             const DoNotHaveAcountRow(),
           ],
         ),

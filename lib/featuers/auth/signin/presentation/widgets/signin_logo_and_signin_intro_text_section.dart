@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/widgets/senior_code_icon.dart';
 import '../../../../../exports.dart';
 
 class SigninLogoAndSigninIntroTextSection extends StatelessWidget {
@@ -9,11 +10,7 @@ class SigninLogoAndSigninIntroTextSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 68.h,
-          width: 140.w,
-          child: Image.asset(AppAssets().seniorCodeLogo),
-        ),
+       const SeniorCodeIcon(),
         59.36.vs,
         Align(
           alignment: Alignment.centerLeft,

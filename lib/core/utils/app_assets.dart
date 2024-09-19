@@ -44,7 +44,6 @@ mixin class SvgImages {
   String circle = "$svgPath/circle.svg";
   String reverse = "$svgPath/yellow_location.svg";
   String line = "$svgPath/line.svg";
-  String calendar = "$svgPath/calendar.svg";
   String exchange = "$svgPath/exchange.svg";
   String date = "$svgPath/time.svg";
   String doneDialog = "$svgPath/done.svg";
@@ -111,6 +110,10 @@ mixin class SvgImages {
   String department = "$svgPath/department.svg";
   //! onBoarding SVGs
   String play = "$svgPath/onboarding_play_video.svg";
+
+  //! Signup SVGs
+  String calendar = "$svgPath/calendar.svg";
+  String arrowDown = "$svgPath/arrow-down.svg";
 }
 
 mixin PngImages {

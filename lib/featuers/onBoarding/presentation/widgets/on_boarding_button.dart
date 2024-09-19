@@ -29,6 +29,7 @@ class NextButton extends StatelessWidget {
               );
             } else if (value == 2) {
               Navigator.pushReplacementNamed(context, Routes.signinRoute);
+              // Routes.signinRoute.pushReplacement;
             }
           },
           backgroundColor: AppColors.lightBlueColor,

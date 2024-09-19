@@ -3,6 +3,7 @@ import 'package:senior_code_app/core/extensions.dart';
 import '../../../../../core/widgets/app_text_button.dart';
 import '../../../../../core/widgets/text_form_field.dart';
 import '../../../../../exports.dart';
+import 'remember_me_and_forget_password_row_section.dart';
 
 class SigninTextFormFieldSection extends StatefulWidget {
   const SigninTextFormFieldSection({super.key});
@@ -19,6 +20,16 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "Email",
+            style: AppStyle.getMediumTextStyle(
+              color: AppColors.white,
+            ),
+          ),
+        ),
+        2.vs,
         AppTextFormField(
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           hintText: "Loisbecket@gmail.com",
@@ -63,26 +74,17 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           ),
         ),
         16.vs,
-        Align(
-          alignment: Alignment.centerRight,
-          child: Text(
-            "Forgot Password?",
-            style: AppStyle.getSemiboldTextStyle(
-              fontSize: 12,
-              color: AppColors.white,
-            ),
-          ),
-        ),
+        const RememberMeAndForgetPasswordRowSection(),
         24.vs,
         AppTextButton(
           onPressed: () {},
-          backgroundColor: AppColors.mainButtonBlueColor.withOpacity(0.77),
+          backgroundColor: AppColors.mainButtonBlueColor,
           buttonWidth: 327.w,
           buttonHeight: 65.h,
           borderRadius: 10.r,
           buttonText: "Log in",
-          textStyle: AppStyle.getBoldTextStyle(
-            fontSize: 24,
+          textStyle: AppStyle.getMediumTextStyle(
+            fontSize: 14,
             color: AppColors.white,
           ),
         ),

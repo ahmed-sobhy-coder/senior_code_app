@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:senior_code_app/core/extensions.dart';
 import 'package:senior_code_app/exports.dart';
 
@@ -17,6 +18,7 @@ class AppTextFormField extends StatelessWidget {
   //  The hint text displayed when the text field is empty.
   final Widget? suffixIcon;
   // An optional widget to display at the end of the text field.
+  final Widget? prefixIcon;
   final Color? fillColor;
   // Background color of the text field.
   final TextEditingController? controller;
@@ -30,12 +32,12 @@ class AppTextFormField extends StatelessWidget {
     this.inputStyle,
     this.hintStyle,
     this.isObscureText,
-    this.suffixIcon,
     required this.hintText,
+    this.suffixIcon,
+    this.prefixIcon,
     this.fillColor,
     this.controller,
     this.radius,
-    // required this.validator,
   });
 
   @override
@@ -89,6 +91,9 @@ class AppTextFormField extends StatelessWidget {
         hintText: hintText,
         // hintText: Displays the provided hint text.
         suffixIcon: suffixIcon,
+        suffixIconColor: AppColors.white,
+        prefixIcon: prefixIcon,
+        prefixIconColor: AppColors.white,
         // suffixIcon: Displays the provided suffix icon, if any.
 
         fillColor: fillColor ?? AppColors.white,

@@ -5,6 +5,7 @@ class Routes {
   Routes._internal();
   static const String onBoardingRoute = "OnBoardingScreen";
   static const String signinRoute = "SigninScreen";
+  static const String signupRoute = "SignupScreen";
 }
 
 class RouteGenerator {
@@ -13,11 +14,15 @@ class RouteGenerator {
   static Route<T>? getRoute<T>(RouteSettings routeSettings) {
     debugPrint(routeSettings.name);
     switch (routeSettings.name) {
+      //! Auth Routes
       case Routes.signinRoute:
         return MaterialPageRoute(
           builder: (context) => const SigninScreen(),
         );
-
+      case Routes.signupRoute:
+        return MaterialPageRoute(
+          builder: (context) => const SignupScreen(),
+        );
       // Default:
       default:
         return null;

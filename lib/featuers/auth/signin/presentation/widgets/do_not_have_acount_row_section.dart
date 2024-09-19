@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../config/routes/app_routes.dart';
 import '../../../../../exports.dart';
 
 class DoNotHaveAcountRow extends StatelessWidget {
@@ -17,11 +18,17 @@ class DoNotHaveAcountRow extends StatelessWidget {
           ),
         ),
         6.hs,
-        Text(
-          "Sign up",
-          style: AppStyle.getSemiboldTextStyle(
-            fontSize: 16,
-            color: AppColors.white,
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, Routes.signupRoute);
+            // Routes.signupRoute.moveTo;
+          },
+          child: Text(
+            "Sign up",
+            style: AppStyle.getSemiboldTextStyle(
+              fontSize: 16,
+              color: AppColors.white,
+            ),
           ),
         ),
         23.vs,
