@@ -193,9 +193,9 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                       'SecondOnBoardingTitleWord']!,
                                   style: AppStyle.getBoldTextStyle(
                                     fontSize: 48,
-                                    color: AppColors.lightBlueColor,
+                                    color: AppColors.lighterBlueColor,
                                     decoration: TextDecoration.underline,
-                                    decorationColor: AppColors.lightBlueColor,
+                                    decorationColor: AppColors.lighterBlueColor,
                                   ),
                                 ),
                                 // Third title word

@@ -6,6 +6,7 @@ class Routes {
   static const String onBoardingRoute = "OnBoardingScreen";
   static const String signinRoute = "SigninScreen";
   static const String signupRoute = "SignupScreen";
+  static const String verificationRoute = "VerificationScreen";
 }
 
 class RouteGenerator {
@@ -23,6 +24,11 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (context) => const SignupScreen(),
         );
+         case Routes.verificationRoute:
+        return MaterialPageRoute(
+          builder: (context) => const VerificationScreen(),
+        );
+
       // Default:
       default:
         return null;

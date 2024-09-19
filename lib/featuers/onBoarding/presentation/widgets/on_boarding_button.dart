@@ -32,7 +32,7 @@ class NextButton extends StatelessWidget {
               // Routes.signinRoute.pushReplacement;
             }
           },
-          backgroundColor: AppColors.lightBlueColor,
+          backgroundColor: AppColors.lighterBlueColor,
           buttonWidth: double.infinity,
           buttonHeight: 65,
           borderRadius: 10.r,

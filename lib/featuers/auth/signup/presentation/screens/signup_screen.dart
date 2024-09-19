@@ -1,5 +1,5 @@
 import 'package:senior_code_app/core/extensions.dart';
-import '../../../../exports.dart';
+import '../../../../../exports.dart';
 import '../widgets/signup_screen_body_section.dart';
 
 class SignupScreen extends StatefulWidget {

@@ -6,9 +6,9 @@ class AppTextButton extends StatelessWidget {
   // Optional border radius for the button.
   final Color? backgroundColor;
   // Optional background color for the button.
-  // final double? horizontalPadding;
+  final double? horizontalPadding;
   // Optional horizontal padding for the button.
-  // final double? verticalPadding;
+  final double? verticalPadding;
   // Optional vertical padding for the button.
   final double? buttonWidth;
   // Optional width for the button.
@@ -24,8 +24,8 @@ class AppTextButton extends StatelessWidget {
     super.key,
     this.borderRadius,
     this.backgroundColor,
-    // this.horizontalPadding,
-    // this.verticalPadding,
+    this.horizontalPadding,
+    this.verticalPadding,
     this.buttonHeight,
     this.buttonWidth,
     required this.buttonText,
@@ -53,11 +53,11 @@ class AppTextButton extends StatelessWidget {
         // backgroundColor: WidgetStatePropertyAll(...): Sets the background
         //color of the button. If backgroundColor is not provided, it defaults
         // to DocSpotColorsManager.primaryBlueColor.
-        // padding: WidgetStateProperty.all<EdgeInsets>(
-        //   EdgeInsets.symmetric(
-        //     horizontal: horizontalPadding?.w ?? 12.w,
-        //     vertical: verticalPadding?.h ?? 14.h,
-        //   ),
+        padding: WidgetStateProperty.all<EdgeInsets>(
+          EdgeInsets.symmetric(
+            horizontal: horizontalPadding?.w ?? 12.w,
+            vertical: verticalPadding?.h ?? 14.h,
+          ),),
         //   // padding: WidgetStateProperty.all<EdgeInsets>(...): Sets the padding
         //   //inside the button. If horizontalPadding or verticalPadding are not
         //   // provided, they default to 12.w and 14.h respectively.

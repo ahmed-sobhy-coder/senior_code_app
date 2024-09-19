@@ -151,6 +151,9 @@ mixin PngImages {
   String userAir = "$imagesPath/user_air.png";
 //! General App PNGs
   String seniorCodeLogo = "$imagesPath/signin_logo.png";
+
+  //! Verification SVGs
+  String verificationCharacter = "$imagesPath/verification_character.png";
 }
 mixin JsonFiles {
   static String lottiePath = 'assets/json';
