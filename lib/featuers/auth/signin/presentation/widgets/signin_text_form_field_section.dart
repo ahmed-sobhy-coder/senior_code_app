@@ -1,0 +1,92 @@
+import 'package:senior_code_app/core/extensions.dart';
+
+import '../../../../../core/widgets/app_text_button.dart';
+import '../../../../../core/widgets/text_form_field.dart';
+import '../../../../../exports.dart';
+
+class SigninTextFormFieldSection extends StatefulWidget {
+  const SigninTextFormFieldSection({super.key});
+
+  @override
+  State<SigninTextFormFieldSection> createState() =>
+      _SigninScreenBodySectionState();
+}
+
+class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
+  bool isObSecureText = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        AppTextFormField(
+          contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
+          hintText: "Loisbecket@gmail.com",
+          radius: 10,
+          hintStyle: AppStyle.getMediumTextStyle(
+            fontSize: 14,
+            color: AppColors.black,
+          ),
+        ),
+        16.vs,
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "Password",
+            style: AppStyle.getMediumTextStyle(
+              color: AppColors.white,
+            ),
+          ),
+        ),
+        2.vs,
+        AppTextFormField(
+          radius: 10,
+          contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
+          isObscureText: isObSecureText,
+          hintText: "*******",
+          hintStyle: AppStyle.getMediumTextStyle(
+            fontSize: 14,
+            color: AppColors.black,
+          ),
+          suffixIcon: IconButton(
+            icon: Icon(
+              isObSecureText ? Icons.visibility_off : Icons.visibility,
+              color: AppColors.darkBlue,
+            ),
+            onPressed: () {
+              setState(
+                () {
+                  isObSecureText = !isObSecureText;
+                },
+              );
+            },
+          ),
+        ),
+        16.vs,
+        Align(
+          alignment: Alignment.centerRight,
+          child: Text(
+            "Forgot Password?",
+            style: AppStyle.getSemiboldTextStyle(
+              fontSize: 12,
+              color: AppColors.white,
+            ),
+          ),
+        ),
+        24.vs,
+        AppTextButton(
+          onPressed: () {},
+          backgroundColor: AppColors.mainButtonBlueColor.withOpacity(0.77),
+          buttonWidth: 327.w,
+          buttonHeight: 65.h,
+          borderRadius: 10.r,
+          buttonText: "Log in",
+          textStyle: AppStyle.getBoldTextStyle(
+            fontSize: 24,
+            color: AppColors.white,
+          ),
+        ),
+      ],
+    );
+  }
+}

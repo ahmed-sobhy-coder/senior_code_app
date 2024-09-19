@@ -109,9 +109,8 @@ mixin class SvgImages {
   String edit = "$svgPath/edit.svg";
   String galary = "$svgPath/galary.svg";
   String department = "$svgPath/department.svg";
-  //! onBoardingSVGs
+  //! onBoarding SVGs
   String play = "$svgPath/onboarding_play_video.svg";
-
 }
 
 mixin PngImages {
@@ -147,6 +146,8 @@ mixin PngImages {
   String user = "$imagesPath/user.png";
 
   String userAir = "$imagesPath/user_air.png";
+//! General App PNGs
+  String seniorCodeLogo = "$imagesPath/signin_logo.png";
 }
 mixin JsonFiles {
   static String lottiePath = 'assets/json';
@@ -160,7 +161,7 @@ mixin JsonFiles {
 }
 mixin Videos {
   static String videosPath = "assets/videos";
-String testOnBoardingVideo = "$videosPath/test.mp4";
+  String testOnBoardingVideo = "$videosPath/test.mp4";
 }
 
 class AppAssets with SvgImages, PngImages, JsonFiles, Videos {

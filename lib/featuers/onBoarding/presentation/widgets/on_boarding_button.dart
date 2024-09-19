@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:senior_code_app/config/routes/app_routes.dart';
 import 'package:senior_code_app/core/extensions.dart';
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_style.dart';
-import '../../../../core/widgets/custom_elevated_button.dart';
+import '../../../../core/widgets/app_text_button.dart';
 import 'onboarding_slider.dart';
 
 class NextButton extends StatelessWidget {
@@ -19,21 +20,23 @@ class NextButton extends StatelessWidget {
       right: 16.w,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 30.5.w),
-        child: CustomElevatedButton(
+        child: AppTextButton(
           onPressed: () {
-            if (value < 2) {
+            if (value < 1) {
               OnBoardingSlider.pageController.nextPage(
                 duration: const Duration(milliseconds: 300),
                 curve: Curves.easeIn,
               );
+            } else if (value == 2) {
+              Navigator.pushReplacementNamed(context, Routes.signinRoute);
             }
           },
-          color: AppColors.lighBlueColor,
-          width: double.infinity,
-          height: 65,
-          radius: 10.r,
-          text: value == 2 ? 'Get Started' : 'Next',
-          style:
+          backgroundColor: AppColors.lightBlueColor,
+          buttonWidth: double.infinity,
+          buttonHeight: 65,
+          borderRadius: 10.r,
+          buttonText: 'Next',
+          textStyle:
               AppStyle.getBoldTextStyle(fontSize: 24, color: AppColors.white),
         ),
       ),

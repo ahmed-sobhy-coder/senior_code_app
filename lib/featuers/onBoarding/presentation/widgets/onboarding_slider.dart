@@ -6,14 +6,16 @@ import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_style.dart';
 import '../../data/onboarding_model.dart';
-import 'ob_boarding_button.dart';
+import 'on_boarding_button.dart';
 import 'play_pause_button.dart';
 import 'video_widget.dart';
 
 class OnBoardingSlider extends StatefulWidget {
   final List<OnboardingModel> onBoardingItems; // List of onboarding items
-  static final selectedVideoNotifier = ValueNotifier<int>(0); // ValueNotifier to track selected video
-  static final PageController pageController = PageController(); // Controller for page view navigation
+  static final selectedVideoNotifier =
+      ValueNotifier<int>(0); // ValueNotifier to track selected video
+  static final PageController pageController =
+      PageController(); // Controller for page view navigation
 
   // Map to store onboarding text titles
   static final onBoardingTexts = {
@@ -30,10 +32,13 @@ class OnBoardingSlider extends StatefulWidget {
 }
 
 class _OnBoardingSliderState extends State<OnBoardingSlider> {
-  late List<VideoPlayerController> _videoControllers; // Controllers for each onboarding video
-  late List<Future<void>> _initializeVideoFutures; // Futures for video initialization
+  late List<VideoPlayerController>
+      _videoControllers; // Controllers for each onboarding video
+  late List<Future<void>>
+      _initializeVideoFutures; // Futures for video initialization
   int _currentPageIndex = 0; // Keeps track of the current page index
-  late List<ValueNotifier<bool>> _isPlayingNotifiers; // Notifiers to track play/pause state of each video
+  late List<ValueNotifier<bool>>
+      _isPlayingNotifiers; // Notifiers to track play/pause state of each video
 
   @override
   void initState() {
@@ -44,13 +49,15 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
   // Initializes video controllers and futures
   void _initializeVideos() {
     _videoControllers = widget.onBoardingItems.map((item) {
-      final controller = VideoPlayerController.asset(item.videoPath); // Load video from assets
+      final controller =
+          VideoPlayerController.asset(item.videoPath); // Load video from assets
       controller.setLooping(false); // Set looping to false for each video
       return controller;
     }).toList();
 
-    _initializeVideoFutures =
-        _videoControllers.map((controller) => controller.initialize()).toList(); // Initialize each video
+    _initializeVideoFutures = _videoControllers
+        .map((controller) => controller.initialize())
+        .toList(); // Initialize each video
 
     // Play the first video once all are initialized
     Future.wait(_initializeVideoFutures).then((_) {
@@ -131,14 +138,17 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<void>(
-      future: Future.wait(_initializeVideoFutures), // Wait for all videos to be initialized
+      future: Future.wait(
+          _initializeVideoFutures), // Wait for all videos to be initialized
       builder: (context, snapshot) {
         return Column(
           children: [
             Expanded(
               child: PageView.builder(
-                controller: OnBoardingSlider.pageController, // Page controller for navigation
-                itemCount: widget.onBoardingItems.length, // Number of onboarding pages
+                controller: OnBoardingSlider
+                    .pageController, // Page controller for navigation
+                itemCount:
+                    widget.onBoardingItems.length, // Number of onboarding pages
                 // onPageChanged callback to handle page changes
                 onPageChanged: (index) {
                   _onPageChanged(index);
@@ -183,9 +193,9 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                       'SecondOnBoardingTitleWord']!,
                                   style: AppStyle.getBoldTextStyle(
                                     fontSize: 48,
-                                    color: AppColors.lighBlueColor,
+                                    color: AppColors.lightBlueColor,
                                     decoration: TextDecoration.underline,
-                                    decorationColor: AppColors.lighBlueColor,
+                                    decorationColor: AppColors.lightBlueColor,
                                   ),
                                 ),
                                 // Third title word

@@ -3,7 +3,9 @@ import 'package:senior_code_app/core/extensions.dart';
 
 class AppColors {
   AppColors._internal();
-  static const Color primaryColor = Color(0xFF274C77);
+  static const Color primaryColor = Color(0xFF070431);
+    static const Color mainButtonBlueColor = Color(0xFF226BA1);
+
   static const Color lightGray = Color(0xFFF8F8FD);
   static const Color shammer = Color(0xffF7E0E8);
   static const Color circularProgressBarColor = Color(0xFFFF8EA0);
@@ -155,5 +157,5 @@ class AppColors {
 
   static const Color regularWhiteColor = Color(0xffFAFAFA);
   static const Color shadowColor3 = Color(0xff666666);
-  static const Color lighBlueColor = Color(0xff4E88B3);
+  static const Color lightBlueColor = Color(0xff4E88B3);
 }
