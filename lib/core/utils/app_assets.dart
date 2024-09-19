@@ -114,6 +114,10 @@ mixin class SvgImages {
   //! Signup SVGs
   String calendar = "$svgPath/calendar.svg";
   String arrowDown = "$svgPath/arrow-down.svg";
+
+  // ! General SVGs
+    String backArrow = "$svgPath/arrow-left.svg";
+
 }
 
 mixin PngImages {
@@ -152,8 +156,10 @@ mixin PngImages {
 //! General App PNGs
   String seniorCodeLogo = "$imagesPath/signin_logo.png";
 
-  //! Verification SVGs
+  //! Verification PNGs
   String verificationCharacter = "$imagesPath/verification_character.png";
+  //!  Reset Password PNGs
+  String resetPassword = "$imagesPath/rest_passworrd_floor.png";
 }
 mixin JsonFiles {
   static String lottiePath = 'assets/json';

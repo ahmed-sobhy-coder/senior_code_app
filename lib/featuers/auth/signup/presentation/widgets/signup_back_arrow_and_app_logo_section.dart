@@ -11,7 +11,10 @@ class SignupBackArrowAndAppLogoSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-      const  SeniorCodeAppBar(),
+        const SeniorCodeAppBar(
+          height: 15.62,
+          width: 18.11,
+        ),
         25.hs,
         const SeniorCodeIcon(),
       ],

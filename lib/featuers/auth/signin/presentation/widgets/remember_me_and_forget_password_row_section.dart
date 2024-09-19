@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../config/routes/app_routes.dart';
 import '../../../../../exports.dart';
 import 'check_box.dart';
 
@@ -51,11 +52,16 @@ class _RememberMeAndForgetPasswordRowSectionState
         ),
         Align(
           alignment: Alignment.centerRight,
-          child: Text(
-            "Forgot Password?",
-            style: AppStyle.getSemiboldTextStyle(
-              fontSize: 12,
-              color: AppColors.white,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.resetPasswordRoute);
+            },
+            child: Text(
+              "Forgot Password?",
+              style: AppStyle.getSemiboldTextStyle(
+                fontSize: 12,
+                color: AppColors.white,
+              ),
             ),
           ),
         ),

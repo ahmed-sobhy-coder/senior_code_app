@@ -24,7 +24,10 @@ class AppTextFormField extends StatelessWidget {
   final TextEditingController? controller;
   // final Function(String?) validator;
   // final Function(String?) validator;
+  final Color? enabledBorderSideColor;
   final int? radius;
+  final String? labelText;
+  final TextStyle? labelStyle;
   const AppTextFormField({
     super.key,
     this.contentPadding,
@@ -38,6 +41,8 @@ class AppTextFormField extends StatelessWidget {
     this.fillColor,
     this.controller,
     this.radius,
+    this.enabledBorderSideColor,
+    this.labelText, this.labelStyle,
   });
 
   @override
@@ -53,6 +58,8 @@ class AppTextFormField extends StatelessWidget {
       // },
 
       decoration: InputDecoration(
+        labelText: labelText,
+        labelStyle: labelStyle,
         // The InputDecoration object customizes the appearance of the TextFormField
         isDense: true,
         // isDense: true: Reduces the height of the text field.
@@ -82,7 +89,7 @@ class AppTextFormField extends StatelessWidget {
             radius.r,
           ),
           borderSide: BorderSide(
-            color: AppColors.white,
+            color: enabledBorderSideColor ?? AppColors.white,
             width: 1.w,
           ),
         ),

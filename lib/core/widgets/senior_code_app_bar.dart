@@ -1,24 +1,32 @@
 import 'package:senior_code_app/core/extensions.dart';
+import 'package:senior_code_app/core/widgets/custome_svg_image.dart';
 
 import '../../exports.dart';
 
 class SeniorCodeAppBar extends StatelessWidget {
   final Color? backArrowIconColor;
-  final double? overAllRoundedSize;
-  const SeniorCodeAppBar(
-      {super.key, this.backArrowIconColor, this.overAllRoundedSize});
+  final double? height;
+  final double? width;
+  const SeniorCodeAppBar({
+    super.key,
+    this.backArrowIconColor,
+    this.height,
+    this.width,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      onPressed: () {
+    return GestureDetector(
+      onTap: () {
         Navigator.pop(context);
       },
-      icon: Icon(
-        size: overAllRoundedSize?.r ?? 17.5.r,
-        // weight: 1.5,
-        Icons.arrow_back,
-        color: backArrowIconColor ?? AppColors.white,
+      child: SizedBox(
+        width: width?.w ?? 17.5.w,
+        height: height?.h ?? 17.5.h,
+        child: CustomSVGImage(
+          asset: AppAssets().backArrow,
+          color: backArrowIconColor ?? AppColors.white,
+        ),
       ),
     );
   }
