@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';  
+import 'package:flutter/material.dart';
 
-import '../../../../core/utils/app_assets.dart'; 
-import '../../data/onboarding_model.dart';  
-import '../widgets/onboarding_slider.dart';  
+import '../../../../core/utils/app_assets.dart';
+import '../../data/onboarding_model.dart';
+import '../widgets/onboarding_slider.dart';
 
 /// A StatelessWidget that represents the Onboarding Screen of the app.
 /// This screen shows a series of onboarding videos to the user.
@@ -12,9 +12,9 @@ class OnboardingScreen extends StatelessWidget {
   /// A static list of video paths that will be shown in the onboarding slider.
   /// Currently, all the video paths point to the same test video asset.
   static final videoPathList = <String>[
-    AppAssets().testOnBoardingVideo,  // Reference to a test onboarding video.
-    AppAssets().testOnBoardingVideo,  // Same video used again.
-    AppAssets().testOnBoardingVideo,  // Same video used for the third time.
+    AppAssets.testOnBoardingVideo, // Reference to a test onboarding video.
+    AppAssets.testOnBoardingVideo, // Same video used again.
+    AppAssets.testOnBoardingVideo, // Same video used for the third time.
   ];
 
   @override

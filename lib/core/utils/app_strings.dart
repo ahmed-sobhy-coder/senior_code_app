@@ -10,9 +10,9 @@ class AppStrings {
   final String welcome = "welcome";
   final String in_str = "in";
 
-  AppStrings._internal();
-  static final AppStrings _instance = AppStrings._internal();
-  factory AppStrings() => _instance;
+  // AppStrings._internal();
+  // static final AppStrings _instance = AppStrings._internal();
+  // factory AppStrings() => _instance;
   final String createAccount = 'createAccount';
 
   final String nameError = 'nameError';
@@ -586,7 +586,7 @@ class AppStrings {
 
   final String see = "see";
   // ! onBoardingTexts
-  final String firstLineOnBoardingScreenTitleWord = "Find Your";
-  final String secondLineOnBoardingScreenTitleWord = "Passion";
-  final String thirdLineOnBoardingScreenTitleWord = "Here!";
+  static const String firstLineOnBoardingScreenTitleWord = "Find Your";
+  static const String secondLineOnBoardingScreenTitleWord = "Passion";
+  static const String thirdLineOnBoardingScreenTitleWord = "Here!";
 }

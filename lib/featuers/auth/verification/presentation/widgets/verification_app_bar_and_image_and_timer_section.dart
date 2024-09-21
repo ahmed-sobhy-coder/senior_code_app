@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../core/widgets/senior_code_app_bar.dart';
 import '../../../../../exports.dart';
 
@@ -25,13 +26,13 @@ class VerificationAppBarAndImageAndTimer extends StatelessWidget {
           width: 219.w,
           height: 219.h,
           child: Image.asset(
-            AppAssets().verificationCharacter,
+            AppAssets.verificationCharacterImage,
           ),
         ),
         23.vs,
         Text(
           "00:59",
-          style: AppStyle.getSemiboldTextStyle(
+          style: AppStyles.getSemiBoldStyle(
             fontSize: 16,
             color: AppColors.lighterBlueColor,
           ),

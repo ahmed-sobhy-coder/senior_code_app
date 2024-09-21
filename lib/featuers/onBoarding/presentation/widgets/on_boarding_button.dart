@@ -3,7 +3,7 @@ import 'package:senior_code_app/config/routes/app_routes.dart';
 import 'package:senior_code_app/core/extensions.dart';
 
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/utils/app_style.dart';
+import '../../../../core/utils/app_styels.dart';
 import '../../../../core/widgets/app_text_button.dart';
 import 'onboarding_slider.dart';
 
@@ -38,7 +38,7 @@ class NextButton extends StatelessWidget {
           borderRadius: 10.r,
           buttonText: 'Next',
           textStyle:
-              AppStyle.getBoldTextStyle(fontSize: 24, color: AppColors.white),
+              AppStyles.getBoldStyle(fontSize: 24, color: AppColors.white),
         ),
       ),
     );

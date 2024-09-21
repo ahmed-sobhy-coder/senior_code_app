@@ -2,6 +2,9 @@
 import 'package:senior_code_app/core/extensions.dart';
 import 'package:senior_code_app/exports.dart';
 
+import '../utils/app_styels.dart';
+
+
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
   // Padding inside the text field.
@@ -93,7 +96,7 @@ class AppTextFormField extends StatelessWidget {
             width: 1.w,
           ),
         ),
-        hintStyle: hintStyle ?? AppStyle.getMediumTextStyle(),
+        hintStyle: hintStyle ?? AppStyles.getMediumStyle(),
         // hintStyle: Uses the provided hintStyle or defaults to a predefined text style.
         hintText: hintText,
         // hintText: Displays the provided hint text.
@@ -133,7 +136,7 @@ class AppTextFormField extends StatelessWidget {
       // cursorColor: Sets the color of the cursor to the primary blue color.
       obscureText: isObscureText ?? false,
       // obscureText: Uses the provided isObscureText value or defaults to false.
-      style: inputStyle ?? AppStyle.getMediumTextStyle(),
+      style: inputStyle ?? AppStyles.getMediumStyle(),
       // style: Uses the provided inputStyle or defaults to a predefined text style.
     );
   }

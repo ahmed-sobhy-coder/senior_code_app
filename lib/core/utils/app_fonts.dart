@@ -7,6 +7,7 @@ class FontFamilies {
   static const String interFamily = "Inter";
   static const String manrope = "Manrope";
   static const String cairoFamily = "Cairo";
+  static const String fontFamily29ltbukra = '29ltbukra';
 }
 
 class FontWeights {

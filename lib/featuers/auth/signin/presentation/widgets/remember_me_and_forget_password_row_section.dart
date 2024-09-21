@@ -1,6 +1,7 @@
 import 'package:senior_code_app/core/extensions.dart';
 
 import '../../../../../config/routes/app_routes.dart';
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../exports.dart';
 import 'check_box.dart';
 
@@ -42,7 +43,7 @@ class _RememberMeAndForgetPasswordRowSectionState
               alignment: Alignment.centerRight,
               child: Text(
                 "Remember me",
-                style: AppStyle.getMediumTextStyle(
+                style: AppStyles.getMediumStyle(
                   fontSize: 12,
                   color: AppColors.white,
                 ),
@@ -58,7 +59,7 @@ class _RememberMeAndForgetPasswordRowSectionState
             },
             child: Text(
               "Forgot Password?",
-              style: AppStyle.getSemiboldTextStyle(
+              style: AppStyles.getSemiBoldStyle(
                 fontSize: 12,
                 color: AppColors.white,
               ),

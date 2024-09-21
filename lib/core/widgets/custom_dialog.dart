@@ -2,6 +2,7 @@ import 'package:senior_code_app/core/extensions.dart';
 
 import '../../exports.dart';
 import '../enums.dart';
+import '../utils/app_styels.dart';
 import 'custome_svg_image.dart';
 
 class CustomDialog extends StatelessWidget {
@@ -51,8 +52,8 @@ class CustomDialog extends StatelessWidget {
                             SizedBox(
                               height: 80.h,
                               width: 80.w,
-                              child: CustomSVGImage(
-                                asset: AppAssets().success,
+                              child: const CustomSVGImage(
+                                asset: AppAssets.successIcon,
                                 color: AppColors.primaryColor,
                                 matchTextDirection: false,
                               ),
@@ -61,8 +62,8 @@ class CustomDialog extends StatelessWidget {
                             SizedBox(
                               height: 80.h,
                               width: 80.w,
-                              child: CustomSVGImage(
-                                asset: AppAssets().failure,
+                              child: const CustomSVGImage(
+                                asset:AppAssets.failureIcon,
                                 matchTextDirection: false,
                                 color: AppColors.primaryColor,
                               ),
@@ -78,7 +79,7 @@ class CustomDialog extends StatelessWidget {
                     message!,
                     softWrap: true,
                     textAlign: TextAlign.center,
-                    style: AppStyle.getRegularTextStyle(
+                    style: AppStyles.getRegularStyle(
                       // fontWeight: FontWeight.,
                       fontSize: 14,
                       color: AppColors.black,

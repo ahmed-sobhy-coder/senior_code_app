@@ -10,7 +10,7 @@ class SeniorCodeIcon extends StatelessWidget {
     return SizedBox(
       height: 68.h,
       width: 140.w,
-      child: Image.asset(AppAssets().seniorCodeLogo),
+      child: Image.asset(AppAssets.seniorCodeLogoImage),
     );
   }
 }

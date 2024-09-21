@@ -4,7 +4,7 @@ import 'package:senior_code_app/featuers/onBoarding/presentation/widgets/app_bar
 import 'package:video_player/video_player.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_strings.dart';
-import '../../../../core/utils/app_style.dart';
+import '../../../../core/utils/app_styels.dart';
 import '../../data/onboarding_model.dart';
 import 'on_boarding_button.dart';
 import 'play_pause_button.dart';
@@ -19,10 +19,10 @@ class OnBoardingSlider extends StatefulWidget {
 
   // Map to store onboarding text titles
   static final onBoardingTexts = {
-    'FirstOnBoardingTitleWord': AppStrings().firstLineOnBoardingScreenTitleWord,
+    'FirstOnBoardingTitleWord': AppStrings.firstLineOnBoardingScreenTitleWord,
     'SecondOnBoardingTitleWord':
-        AppStrings().secondLineOnBoardingScreenTitleWord,
-    'ThirdOnBoardingTitleWord': AppStrings().thirdLineOnBoardingScreenTitleWord,
+        AppStrings.secondLineOnBoardingScreenTitleWord,
+    'ThirdOnBoardingTitleWord': AppStrings.thirdLineOnBoardingScreenTitleWord,
   };
 
   const OnBoardingSlider({super.key, required this.onBoardingItems});
@@ -182,7 +182,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                 Text(
                                   OnBoardingSlider.onBoardingTexts[
                                       'FirstOnBoardingTitleWord']!,
-                                  style: AppStyle.getBoldTextStyle(
+                                  style: AppStyles.getBoldStyle(
                                     fontSize: 48,
                                     color: AppColors.white,
                                   ),
@@ -191,7 +191,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                 Text(
                                   OnBoardingSlider.onBoardingTexts[
                                       'SecondOnBoardingTitleWord']!,
-                                  style: AppStyle.getBoldTextStyle(
+                                  style: AppStyles.getBoldStyle(
                                     fontSize: 48,
                                     color: AppColors.lighterBlueColor,
                                     decoration: TextDecoration.underline,
@@ -202,7 +202,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                 Text(
                                   OnBoardingSlider.onBoardingTexts[
                                       'ThirdOnBoardingTitleWord']!,
-                                  style: AppStyle.getBoldTextStyle(
+                                  style: AppStyles.getBoldStyle(
                                     fontSize: 48,
                                     color: AppColors.white,
                                   ),

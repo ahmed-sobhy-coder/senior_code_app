@@ -2,6 +2,7 @@ import 'package:senior_code_app/core/extensions.dart';
 
 
 import '../../exports.dart';
+import '../utils/app_styels.dart';
 
 Future showCustomDialog({
   required BuildContext context,
@@ -33,7 +34,7 @@ Future showCustomDialog({
                       alignment: Alignment.center,
                       child: Text(
                         title!,
-                        style: AppStyle.getSemiboldTextStyle(
+                        style: AppStyles.getSemiBoldStyle(
                           fontSize: 20,
                           color: AppColors.titleGray,
                         ),
@@ -45,7 +46,7 @@ Future showCustomDialog({
                       space.isNotNull ? space!.vs : 4.vs,
                       Text(
                         content!,
-                        style: AppStyle.getMediumTextStyle(
+                        style: AppStyles.getMediumStyle(
                           fontSize: 16,
                           color: AppColors.titleGray,
                         ),

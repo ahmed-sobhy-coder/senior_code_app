@@ -1,3 +1,4 @@
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../exports.dart';
 
 class DidNotReceiveCodeAndSendAgain extends StatelessWidget {
@@ -9,13 +10,13 @@ class DidNotReceiveCodeAndSendAgain extends StatelessWidget {
       children: [
         Text(
           "Did not receive the code?",
-          style: AppStyle.getRegularTextStyle(
+          style: AppStyles.getRegularStyle(
             fontSize: 16,
           ),
         ),
         Text(
           "Send Again",
-          style: AppStyle.getSemiboldTextStyle(
+          style: AppStyles.getSemiBoldStyle(
             fontSize: 16,
             color: AppColors.lighterBlueColor,
           ),

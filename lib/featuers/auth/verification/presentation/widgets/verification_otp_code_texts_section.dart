@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../exports.dart';
 
 class VerificationTexts extends StatelessWidget {
@@ -13,7 +14,7 @@ class VerificationTexts extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             "Verification Code",
-            style: AppStyle.getSemiboldTextStyle(
+            style: AppStyles.getSemiBoldStyle(
               fontSize: 24,
               color: AppColors.black,
             ),
@@ -24,7 +25,7 @@ class VerificationTexts extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             "Please confirm the security code received on your\nregistered email.",
-            style: AppStyle.getRegularTextStyle(
+            style: AppStyles.getRegularStyle(
               fontSize: 12,
               color: AppColors.lightGrayColor,
             ),

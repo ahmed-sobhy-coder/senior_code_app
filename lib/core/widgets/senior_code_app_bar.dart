@@ -24,7 +24,7 @@ class SeniorCodeAppBar extends StatelessWidget {
         width: width?.w ?? 17.5.w,
         height: height?.h ?? 17.5.h,
         child: CustomSVGImage(
-          asset: AppAssets().backArrow,
+          asset: AppAssets.backIcon,
           color: backArrowIconColor ?? AppColors.white,
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../core/widgets/app_text_button.dart';
 import '../../../../../core/widgets/custome_svg_image.dart';
 import '../../../../../core/widgets/text_form_field.dart';
@@ -32,7 +33,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
       children: [
         Text(
           "Sign up",
-          style: AppStyle.getBoldTextStyle(
+          style: AppStyles.getBoldStyle(
             fontSize: 32,
             color: AppColors.white,
           ),
@@ -43,7 +44,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           children: [
             Text(
               "Already have an account? ",
-              style: AppStyle.getMediumTextStyle(
+              style: AppStyles.getMediumStyle(
                 fontSize: 12,
                 color: AppColors.white,
               ),
@@ -54,7 +55,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
               },
               child: Text(
                 "Login",
-                style: AppStyle.getSemiboldTextStyle(
+                style: AppStyles.getSemiBoldStyle(
                   fontSize: 12,
                   color: AppColors.secondPrimaryColor,
                 ),
@@ -67,7 +68,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Full Name",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
               fontSize: 12,
             ),
@@ -78,7 +79,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           hintText: "Lois Becket",
           radius: 10,
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -88,7 +89,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Email",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
               fontSize: 12,
             ),
@@ -99,7 +100,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           hintText: "Loisbecket@gmail.com",
           radius: 10,
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -109,7 +110,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Date of Birth",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
               fontSize: 12,
             ),
@@ -117,14 +118,14 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
         ),
         2.vs,
         DatePickerTextField(
-          hintStyle: AppStyle.getMediumTextStyle(fontSize: 14),
+          hintStyle: AppStyles.getMediumStyle(fontSize: 14),
           controller: _dateController,
           initialDate: _selectedDate,
           onDateSelected: _onDateSelected,
           hintText: '18/03/2024',
-          suffixIcon: CustomSVGImage(
+          suffixIcon: const CustomSVGImage(
             fit: BoxFit.scaleDown,
-            asset: AppAssets().calendar,
+            asset: AppAssets.calenderIcon,
           ),
         ),
         16.vs,
@@ -132,7 +133,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Phone Number",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
               fontSize: 12,
             ),
@@ -140,14 +141,14 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
         ),
         2.vs,
         AppTextFormField(
-          prefixIcon: CustomSVGImage(
+          prefixIcon: const CustomSVGImage(
             fit: BoxFit.scaleDown,
-            asset: AppAssets().arrowDown,
+            asset: AppAssets.arrowDownIcon,
           ),
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           hintText: "(454) 726-0592",
           radius: 10,
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -157,7 +158,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Set Password",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
               fontSize: 12,
             ),
@@ -169,7 +170,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           isObscureText: isObSecureText,
           hintText: "*******",
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -202,7 +203,7 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
           buttonHeight: 65.h,
           borderRadius: 10.r,
           buttonText: "Register",
-          textStyle: AppStyle.getMediumTextStyle(
+          textStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.white,
           ),

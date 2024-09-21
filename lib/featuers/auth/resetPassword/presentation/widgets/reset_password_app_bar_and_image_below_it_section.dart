@@ -24,7 +24,7 @@ class ResetPasswordAppBarAndImageBelowItSection extends StatelessWidget {
         SizedBox(
           height: 220.h,
           width: 233.53.w,
-          child: Image.asset(AppAssets().resetPassword),
+          child: Image.asset(AppAssets.resetPasswordImage),
         ),
       ],
     );

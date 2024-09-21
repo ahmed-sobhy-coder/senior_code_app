@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:senior_code_app/core/extensions.dart';
 
-import '../../../../core/utils/app_style.dart';
+import '../../../../core/utils/app_styels.dart';
 import 'onboarding_slider.dart';
 
 class AppBarWidget extends StatelessWidget {
@@ -36,7 +36,7 @@ class AppBarWidget extends StatelessWidget {
                 },
                 child: Text(
                   'Skip',
-                  style: AppStyle.getBoldTextStyle(fontSize: 20, color: Colors.white),
+                  style: AppStyles.getBoldStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
           ],

@@ -95,14 +95,12 @@ class DatePickerTextField extends StatelessWidget {
           },
         );
 
-        if (pickedDate != null) {
-          String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate);
-          controller.text = formattedDate; // Set output date to TextField value
-          onDateSelected(
-            pickedDate,
-          ); // Call the callback function with the selected date
-        }
-      },
+        String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate!);
+        controller.text = formattedDate; // Set output date to TextField value
+        onDateSelected(
+          pickedDate,
+        ); // Call the callback function with the selected date
+            },
     );
   }
 }

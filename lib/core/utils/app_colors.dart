@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:senior_code_app/core/extensions.dart';
 
 class AppColors {
-  AppColors._internal();
+  AppColors._();
+  static final AppColors _instance = AppColors._();
+  factory AppColors() => _instance;
   static const Color primaryColor = Color(0xFF070431);
   static const Color secondPrimaryColor = Color(0xFF4D81E7);
   static const Color thirdPrimaryColor = Color(0xFF226BA1);
@@ -18,10 +20,10 @@ class AppColors {
   static const Color textFieldShadow1 = Color(0xFFBBC3CE);
   static const Color textFieldShadow2 = Color(0xFFFDFFFF);
   static const Color textFieldTextColor = Color(0xFF253138);
-  static const errorColor = Color(0xFFED2241);
-  static const lightSlateGray = Color(0xff9e9e9e);
-  static const descriptionColor = Color(0xFF606268);
-  static const textSpan1Color = Color(0xFF9FA0A1);
+  static const Color errorColor = Color(0xFFED2241);
+  static const Color lightSlateGray = Color(0xff9e9e9e);
+  static const Color descriptionColor = Color(0xFF606268);
+  static const Color textSpan1Color = Color(0xFF9FA0A1);
 
   static const Color minBlack = Color(0xFF464444);
   static const Color divider = Color(0x5EA8A8A8);
@@ -34,17 +36,17 @@ class AppColors {
   static const Color reviewBorder = Color(0xFFEFEFF2);
 
   static const Color unselectedButton = Color(0xFF9D9D9D);
-  static Color separatorColor = const Color(0xFFD9D9D9);
+  static const Color separatorColor =  Color(0xFFD9D9D9);
   static const Color hintColor = Color(0xFF38393C);
   static Color splashLinearGradientColor1 = '#549DEA'.colorFromString;
   static Color lightBlue = '#EFF3FC'.colorFromString;
   // static Color green = Colors.green;
   static Color smokeyGrey = '#757374'.colorFromString;
   static const Color gunsmoke = Color(0xff878787);
-  static Color platinum = const Color(0xFFE2E2E2);
-  static Color textProfileColor = const Color(0xFF3F3F3D);
-  static Color grayBlue = const Color(0xFF546E7A);
-  static Color green = const Color(0xFF569F63);
+  static const Color platinum =  Color(0xFFE2E2E2);
+  static const Color textProfileColor =  Color(0xFF3F3F3D);
+  static const Color grayBlue =  Color(0xFF546E7A);
+  static const Color green =  Color(0xFF569F63);
   static const Color borderColor = Color(0xFFE2E8F0);
 
   ///////////////////////////////////////////////
@@ -52,28 +54,28 @@ class AppColors {
   // static Color descColor = '#878787'.colorFromString;
   static const Color descColor = Color(0xFF878787);
   static const Color black = Colors.black;
-  static Color deepGray = const Color(0xFF263238);
+  static const Color deepGray =  Color(0xFF263238);
   static const Color red = Colors.red;
-  static Color midGray = '#E6E6E6'.colorFromString;
+  static  Color midGray = '#E6E6E6'.colorFromString;
   static const Color grey = Colors.grey;
-  static Color? greyShade = Colors.grey[700];
+  static  Color? greyShade = Colors.grey[700];
 
-  static Color yellowColor = const Color(0xFFFFC100);
+  static const Color yellowColor =  Color(0xFFFFC100);
   // '#8C5300'.colorFromString;
   static const Color textStyleColor = Color(0xff454545);
   static const Color buttonShadowColor = Color(0xffE4B46F);
-  static const brown = Color(0xFF6B4918);
-  static const lightOrange = Color(0xFFFFF3E2);
-  static const mediumOrange = Color(0xFFF8D7A7);
-  static const regularGray = Color(0xFF424242);
-  static const subtitleColor = Color(0xFF8E9EB0);
-  static const subServiceTitleColor = Color(0xFF1A1D1F);
-  static const dividerColor1 = Color(0xFFB4BECB);
-  static const dividerColor2 = Color(0xFFF6E7DE);
-  static const lightOrange1 = Color(0xFFFFFAF2);
-  static const regularBlack = Color(0xFF322718);
-  static Color darkPrimaryColor = const Color(0xffB26900);
-  static Color lightGray2 = '#E2E2E2'.colorFromString;
+  static const Color brown = Color(0xFF6B4918);
+  static const Color lightOrange = Color(0xFFFFF3E2);
+  static const Color mediumOrange = Color(0xFFF8D7A7);
+  static const Color regularGray = Color(0xFF424242);
+  static const Color subtitleColor = Color(0xFF8E9EB0);
+  static const Color subServiceTitleColor = Color(0xFF1A1D1F);
+  static const Color dividerColor1 = Color(0xFFB4BECB);
+  static const Color dividerColor2 = Color(0xFFF6E7DE);
+  static const Color lightOrange1 = Color(0xFFFFFAF2);
+  static const Color regularBlack = Color(0xFF322718);
+  static const Color darkPrimaryColor =  Color(0xffB26900);
+  static  Color lightGray2 = '#E2E2E2'.colorFromString;
 
   static Color miduimGray = '#A3A3A3'.colorFromString;
   static Color favouriteWhite = '#FCFCFC'.colorFromString;
@@ -83,11 +85,11 @@ class AppColors {
   static Color orange = '#F68F5A'.colorFromString;
   static Color gray = '#757374'.colorFromString;
   static Color iconsGray = '#ADADAD'.colorFromString;
-  static Color greyLight = const Color(0xff515151);
+  static const Color greyLight =  Color(0xff515151);
   static Color darkGray2 = '#828282'.colorFromString;
   static Color unselectedgray = '#C5C5C5'.colorFromString;
   static Color lightgray3 = '#979797'.colorFromString;
-  static Color textColor = const Color(0xFF474747);
+  static const Color textColor =  Color(0xFF474747);
   static Color lightWhite = '#FFF'.colorFromString;
   static const Color darkBlue = Color(0xff151528);
   static Color splashLinearGradientColor2 =
@@ -97,13 +99,13 @@ class AppColors {
   static const Color transparent = Colors.transparent;
   /* will be deleted*/
   static const Color bottomSheetColor = Color(0xFFFFFCF9);
-  static Color textButtonColor = const Color(0xFF0074FF);
-  static Color polyLineColor = const Color(0xFF255BD8);
-  static Color lightGray1 = const Color(0xFFDCDCDC);
-  static Color cancelBorderColor = const Color(0xFFC0C0C0);
-  static Color cancelTextColor = const Color(0xFFAEAEAE);
-  static Color dividerColor = const Color(0xFFDEDEDE);
-  static Color dashedDividerColor = const Color(0xffB8B8D1);
+  static const Color textButtonColor =  Color(0xFF0074FF);
+  static const Color polyLineColor =  Color(0xFF255BD8);
+  static const Color lightGray1 =  Color(0xFFDCDCDC);
+  static const Color cancelBorderColor =  Color(0xFFC0C0C0);
+  static const Color cancelTextColor =  Color(0xFFAEAEAE);
+  static const Color dividerColor =  Color(0xFFDEDEDE);
+  static const Color dashedDividerColor =  Color(0xffB8B8D1);
 
   static const Color primaryIconColor = Color(0xFF091945);
   static const Color borderColor3 = Color(0xFFD6D6D6);
@@ -148,11 +150,11 @@ class AppColors {
   static const Color secondLogoColor = Color(0xFF2631FD);
   static const Color thirdLogoColor = Color(0xFF8241FC);
 
-  static Color grayColor2 = const Color(0xFFEDEDED);
+  static const Color grayColor2 =  Color(0xFFEDEDED);
   static const Color forthLogoColor = Color(0xFF4ABFF6);
 
-  static Color mediumGray = const Color(0xFF2C2C2C);
-  static Color mediumWhite = const Color(0xFFE7ECEF);
+  static const Color mediumGray =  Color(0xFF2C2C2C);
+  static const Color mediumWhite =  Color(0xFFE7ECEF);
 
 ////////////////////////////////////////////////
 

@@ -1,6 +1,7 @@
 import 'package:senior_code_app/core/extensions.dart';
 
 import '../../../../../config/routes/app_routes.dart';
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../exports.dart';
 
 class DoNotHaveAcountRow extends StatelessWidget {
@@ -13,7 +14,7 @@ class DoNotHaveAcountRow extends StatelessWidget {
       children: [
         Text(
           "Don't have an account?",
-          style: AppStyle.getMediumTextStyle(
+          style: AppStyles.getMediumStyle(
             color: AppColors.white,
           ),
         ),
@@ -25,7 +26,7 @@ class DoNotHaveAcountRow extends StatelessWidget {
           },
           child: Text(
             "Sign up",
-            style: AppStyle.getSemiboldTextStyle(
+            style: AppStyles.getSemiBoldStyle(
               fontSize: 16,
               color: AppColors.white,
             ),

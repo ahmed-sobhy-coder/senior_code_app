@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../core/widgets/app_text_button.dart';
 import '../../../../../core/widgets/text_form_field.dart';
 import '../../../../../exports.dart';
@@ -24,7 +25,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Email",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
             ),
           ),
@@ -34,7 +35,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           hintText: "Loisbecket@gmail.com",
           radius: 10,
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -44,7 +45,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           alignment: Alignment.centerLeft,
           child: Text(
             "Password",
-            style: AppStyle.getMediumTextStyle(
+            style: AppStyles.getMediumStyle(
               color: AppColors.white,
             ),
           ),
@@ -55,7 +56,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           contentPadding: EdgeInsets.fromLTRB(27.w, 14.h, 27.w, 14.h),
           isObscureText: isObSecureText,
           hintText: "*******",
-          hintStyle: AppStyle.getMediumTextStyle(
+          hintStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.black,
           ),
@@ -83,7 +84,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
           buttonHeight: 65.h,
           borderRadius: 10.r,
           buttonText: "Log in",
-          textStyle: AppStyle.getMediumTextStyle(
+          textStyle: AppStyles.getMediumStyle(
             fontSize: 14,
             color: AppColors.white,
           ),

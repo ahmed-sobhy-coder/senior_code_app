@@ -4,6 +4,7 @@ import 'package:senior_code_app/core/widgets/custome_svg_image.dart';
 import '../../config/routes/app_routes_helper.dart';
 import '../../exports.dart';
 import '../size_utils.dart';
+import '../utils/app_styels.dart';
 import 'custom_elevated_button.dart';
 
 class PermissionDialog extends StatelessWidget {
@@ -34,11 +35,11 @@ class PermissionDialog extends StatelessWidget {
               padding: getPadding(top: 25.h, bottom: 60.h),
               child: CustomSVGImage(asset: asset),
             ),
-            Text(title, style: AppStyle.getBoldTextStyle(fontSize: 20)),
+            Text(title, style: AppStyles.getBoldStyle(fontSize: 20)),
             16.vs,
             Text(
               description,
-              style: AppStyle.getMediumTextStyle(fontSize: 16, color: AppColors.descriptionColor),
+              style: AppStyles.getMediumStyle(fontSize: 16, color: AppColors.descriptionColor),
             ),
             62.vs,
             Column(
@@ -53,7 +54,7 @@ class PermissionDialog extends StatelessWidget {
                 CustomElevatedButton(
                   onPressed: () => pop(false),
                   text: AppStrings().deny.trans,
-                  style: AppStyle.getMediumTextStyle(color: AppColors.primaryColor, fontSize: 16.h),
+                  style: AppStyles.getMediumStyle(color: AppColors.primaryColor, fontSize: 16.h),
                   color: AppColors.white,
                   radius: 36.h,
                   side: BorderSide(color: AppColors.primaryColor, width: 1.h),

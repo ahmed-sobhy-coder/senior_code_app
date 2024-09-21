@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../core/utils/app_styels.dart';
 import '../../../../../core/widgets/app_text_button.dart';
 import '../../../../../exports.dart';
 import 'otp_input_field_section.dart';
@@ -29,7 +30,7 @@ class VerificationFieldAndConfirmButton extends StatelessWidget {
           horizontalPadding: 10.w,
           backgroundColor: AppColors.lighterBlueColor,
           buttonText: "Confirm",
-          textStyle: AppStyle.getSemiboldTextStyle(
+          textStyle: AppStyles.getSemiBoldStyle(
             fontSize: 16,
             color: AppColors.white,
           ),

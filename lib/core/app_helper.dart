@@ -17,6 +17,7 @@ import 'network/network_enums.dart';
 import 'permission_handler.dart';
 import 'resonse_messages.dart';
 import 'response_code.dart';
+import 'utils/app_styels.dart';
 import 'widgets/permission_dialog.dart';
 
 Map<String, dynamic>? getArguments(BuildContext context) =>
@@ -54,7 +55,7 @@ Future<String?> showPickDialog(BuildContext context, String? image) async {
     //textDirection: AppService().getBlocData<LanguageCubit>().isEn ? TextDirection.ltr : TextDirection.rtl,
     contentPadding: const EdgeInsets.symmetric(vertical: 16),
     title: AppStrings().chooseAction.trans,
-    titleTextStyle:AppStyle.getBoldTextStyle(fontSize: 16, color: Colors.amber),
+    titleTextStyle:AppStyles.getBoldStyle(fontSize: 16, color: Colors.amber),
     // builder: (_) => FilePickerDialog(isSelected: (image.isNotNull)),
   );
   if (galleryFileTypes.isNotNull) {
@@ -608,7 +609,7 @@ Future<bool> checkNotificationPermission(
     type: Permission.notification.value,
     dialog: PermissionDialog(
       title: AppStrings().notifications.trans,
-      asset: AppAssets().notificationDialog,
+      asset: AppAssets.notificationDialogIcon,
       description: AppStrings().notificationPermission.trans,
     ),
   );
@@ -623,7 +624,7 @@ Future<bool> checkCameraPermission(
     type: Permission.camera.value,
     dialog: PermissionDialog(
       title: AppStrings().camera.trans,
-      asset: AppAssets().cameraDialog,
+      asset: AppAssets.cameraDialogIcon,
       description: AppStrings().cameraPermission.trans,
     ),
   );
@@ -638,7 +639,7 @@ Future<bool> checkLocationPermission(
     type: Permission.location.value,
     dialog: PermissionDialog(
       title: AppStrings().location.trans,
-      asset: AppAssets().cameraDialog,
+      asset: AppAssets.cameraDialogIcon,
       description: AppStrings().locationPermission.trans,
     ),
   );

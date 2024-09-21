@@ -2,6 +2,7 @@ import 'package:senior_code_app/core/extensions.dart';
 import 'package:senior_code_app/core/size_utils.dart';
 
 import '../../exports.dart';
+import '../utils/app_styels.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton(
@@ -66,7 +67,7 @@ class CustomElevatedButton extends StatelessWidget {
             text,
             textScaler:const TextScaler.linear(1),
             textAlign: TextAlign.center,
-            style: style ?? AppStyle.getBoldTextStyle(color: AppColors.white, fontSize: 16,),
+            style: style ?? AppStyles.getBoldStyle(color: AppColors.white, fontSize: 16,),
           ),
           if (rightIcon.isNotNull) rightIcon!,
         ],

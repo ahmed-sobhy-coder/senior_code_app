@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:senior_code_app/core/extensions.dart';
 
 import '../../exports.dart';
+import '../utils/app_styels.dart';
 
 class CustomNetworkImage extends StatelessWidget {
   String? imageUrl;
@@ -139,7 +140,7 @@ class CustomNetworkImage extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           asset.substring(0, 2),
-          style: AppStyle.getBoldTextStyle(fontSize: 20.h, color: AppColors.white),
+          style: AppStyles.getBoldStyle(fontSize: 20.h, color: AppColors.white),
         ),
       );
     }

@@ -1,11 +1,7 @@
-
-
 import 'package:senior_code_app/core/size_utils.dart';
 import '../config/constants/app_constants.dart';
 import '../exports.dart';
 import 'package:senior_code_app/config/routes/app_routes_helper.dart';
-
-
 
 extension StringExtension on String? {
   String get removeSpaces => validate.replaceAll(' ', '');

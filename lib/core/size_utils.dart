@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, constant_identifier_names
+// ignore_for_file: constant_identifier_names, deprecated_member_use
 
 import 'package:flutter/material.dart';
 
