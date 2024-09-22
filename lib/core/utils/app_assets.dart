@@ -45,7 +45,17 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}verification_character.png";
   static const String resetPasswordImage =
       "${PngAssets.pngAssets}rest_passworrd_floor.png";
-
+  static const String womanHome = "${PngAssets.pngAssets}home_woman.png";
+  static const String homeDarkBlueContainer =
+      "${PngAssets.pngAssets}home_darkblue_container.png";
+  static const String firstHomeCategory =
+      "${PngAssets.pngAssets}first_home_category.png";
+  static const String secondHomeCategory =
+      "${PngAssets.pngAssets}second_home_category.png";
+  static const String thirdHomeCategory =
+      "${PngAssets.pngAssets}third_home_category.png";
+ static const String khedmtyTestPortfolio =
+      "${PngAssets.pngAssets}khedmty_test_portfolio.png";
   // Icons SVG
   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String calenderIcon = "${SvgAssets.svgAssets}calendar.svg";
@@ -122,6 +132,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${SvgAssets.svgAssets}yellow_locatiom.svg";
   static const String onBoardingBackgroundIcon =
       "${SvgAssets.svgAssets}onboarding_background.svg";
+      static const String locationIcon =
+      "${SvgAssets.svgAssets}location.svg";
 
   // Video Assets
   static const String testOnBoardingVideo =

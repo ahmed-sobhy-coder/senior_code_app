@@ -139,3 +139,13 @@ flutter:
           weight: 500
         - asset: assets/fonts/poppins/Poppins-Regular.ttf
           weight: 400
+    - family: DMSans
+      fonts:
+        - asset: assets/fonts/dmsans/DMSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/dmsans/DMSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/dmsans/DMSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/dmsans/DMSans-Regular.ttf
+          weight: 400

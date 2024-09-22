@@ -11,7 +11,7 @@ class AppColors {
   static const Color lighterBlueColor = Color(0xFF4B8EBA);
   static const Color lightGrayColor = Color(0xFF757575);
   static const Color mainButtonBlueColor = Color(0xFF4280AE);
-
+  static const Color skyBlue = Color(0xFF378FC2);
   static const Color lightGray = Color(0xFFF8F8FD);
   static const Color shammer = Color(0xffF7E0E8);
   static const Color circularProgressBarColor = Color(0xFFFF8EA0);
@@ -24,6 +24,9 @@ class AppColors {
   static const Color lightSlateGray = Color(0xff9e9e9e);
   static const Color descriptionColor = Color(0xFF606268);
   static const Color textSpan1Color = Color(0xFF9FA0A1);
+  static const Color steelBlue = Color(0xFF4C8FBB);
+  static const Color grayishBlue = Color(0xFF8D8DA6);
+  static const Color lightLavender = Color(0xFFe9e1ff);
 
   static const Color minBlack = Color(0xFF464444);
   static const Color divider = Color(0x5EA8A8A8);
@@ -36,17 +39,17 @@ class AppColors {
   static const Color reviewBorder = Color(0xFFEFEFF2);
 
   static const Color unselectedButton = Color(0xFF9D9D9D);
-  static const Color separatorColor =  Color(0xFFD9D9D9);
+  static const Color separatorColor = Color(0xFFD9D9D9);
   static const Color hintColor = Color(0xFF38393C);
   static Color splashLinearGradientColor1 = '#549DEA'.colorFromString;
   static Color lightBlue = '#EFF3FC'.colorFromString;
   // static Color green = Colors.green;
   static Color smokeyGrey = '#757374'.colorFromString;
   static const Color gunsmoke = Color(0xff878787);
-  static const Color platinum =  Color(0xFFE2E2E2);
-  static const Color textProfileColor =  Color(0xFF3F3F3D);
-  static const Color grayBlue =  Color(0xFF546E7A);
-  static const Color green =  Color(0xFF569F63);
+  static const Color platinum = Color(0xFFE2E2E2);
+  static const Color textProfileColor = Color(0xFF3F3F3D);
+  static const Color grayBlue = Color(0xFF546E7A);
+  static const Color green = Color(0xFF569F63);
   static const Color borderColor = Color(0xFFE2E8F0);
 
   ///////////////////////////////////////////////
@@ -54,13 +57,13 @@ class AppColors {
   // static Color descColor = '#878787'.colorFromString;
   static const Color descColor = Color(0xFF878787);
   static const Color black = Colors.black;
-  static const Color deepGray =  Color(0xFF263238);
+  static const Color deepGray = Color(0xFF263238);
   static const Color red = Colors.red;
-  static  Color midGray = '#E6E6E6'.colorFromString;
+  static Color midGray = '#E6E6E6'.colorFromString;
   static const Color grey = Colors.grey;
-  static  Color? greyShade = Colors.grey[700];
+  static Color? greyShade = Colors.grey[700];
 
-  static const Color yellowColor =  Color(0xFFFFC100);
+  static const Color yellowColor = Color(0xFFFFC100);
   // '#8C5300'.colorFromString;
   static const Color textStyleColor = Color(0xff454545);
   static const Color buttonShadowColor = Color(0xffE4B46F);
@@ -74,8 +77,8 @@ class AppColors {
   static const Color dividerColor2 = Color(0xFFF6E7DE);
   static const Color lightOrange1 = Color(0xFFFFFAF2);
   static const Color regularBlack = Color(0xFF322718);
-  static const Color darkPrimaryColor =  Color(0xffB26900);
-  static  Color lightGray2 = '#E2E2E2'.colorFromString;
+  static const Color darkPrimaryColor = Color(0xffB26900);
+  static Color lightGray2 = '#E2E2E2'.colorFromString;
 
   static Color miduimGray = '#A3A3A3'.colorFromString;
   static Color favouriteWhite = '#FCFCFC'.colorFromString;
@@ -85,11 +88,11 @@ class AppColors {
   static Color orange = '#F68F5A'.colorFromString;
   static Color gray = '#757374'.colorFromString;
   static Color iconsGray = '#ADADAD'.colorFromString;
-  static const Color greyLight =  Color(0xff515151);
+  static const Color greyLight = Color(0xff515151);
   static Color darkGray2 = '#828282'.colorFromString;
   static Color unselectedgray = '#C5C5C5'.colorFromString;
   static Color lightgray3 = '#979797'.colorFromString;
-  static const Color textColor =  Color(0xFF474747);
+  static const Color textColor = Color(0xFF474747);
   static Color lightWhite = '#FFF'.colorFromString;
   static const Color darkBlue = Color(0xff151528);
   static Color splashLinearGradientColor2 =
@@ -99,13 +102,13 @@ class AppColors {
   static const Color transparent = Colors.transparent;
   /* will be deleted*/
   static const Color bottomSheetColor = Color(0xFFFFFCF9);
-  static const Color textButtonColor =  Color(0xFF0074FF);
-  static const Color polyLineColor =  Color(0xFF255BD8);
-  static const Color lightGray1 =  Color(0xFFDCDCDC);
-  static const Color cancelBorderColor =  Color(0xFFC0C0C0);
-  static const Color cancelTextColor =  Color(0xFFAEAEAE);
-  static const Color dividerColor =  Color(0xFFDEDEDE);
-  static const Color dashedDividerColor =  Color(0xffB8B8D1);
+  static const Color textButtonColor = Color(0xFF0074FF);
+  static const Color polyLineColor = Color(0xFF255BD8);
+  static const Color lightGray1 = Color(0xFFDCDCDC);
+  static const Color cancelBorderColor = Color(0xFFC0C0C0);
+  static const Color cancelTextColor = Color(0xFFAEAEAE);
+  static const Color dividerColor = Color(0xFFDEDEDE);
+  static const Color dashedDividerColor = Color(0xffB8B8D1);
 
   static const Color primaryIconColor = Color(0xFF091945);
   static const Color borderColor3 = Color(0xFFD6D6D6);
@@ -123,6 +126,7 @@ class AppColors {
   static const Color circleIconColor = Color(0xFFF5F5FF);
   static const Color textTitle = Color(0xFF101010);
   static const Color textCount = Color(0xFF363F4F);
+  static const Color richBlack = Color(0xFF060527);
 
   static const Color yellow = Color(0xFFFE8C00);
 
@@ -150,11 +154,11 @@ class AppColors {
   static const Color secondLogoColor = Color(0xFF2631FD);
   static const Color thirdLogoColor = Color(0xFF8241FC);
 
-  static const Color grayColor2 =  Color(0xFFEDEDED);
+  static const Color grayColor2 = Color(0xFFEDEDED);
   static const Color forthLogoColor = Color(0xFF4ABFF6);
 
-  static const Color mediumGray =  Color(0xFF2C2C2C);
-  static const Color mediumWhite =  Color(0xFFE7ECEF);
+  static const Color mediumGray = Color(0xFF2C2C2C);
+  static const Color mediumWhite = Color(0xFFE7ECEF);
 
 ////////////////////////////////////////////////
 
