@@ -71,7 +71,6 @@ dependencies:
   url_launcher: ^6.3.0
   rxdart: ^0.28.0
   table_calendar: ^3.1.2
-  # syncfusion_flutter_datepicker: ^27.1.48
   intl: ^0.19.0
   flutter_otp_text_field: ^1.2.0
 
@@ -83,20 +82,6 @@ dev_dependencies:
 
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.13.1
-
-# flutter_launcher_icons:
-#   android: "launcher_icon"
-#   ios: true
-#   image_path: "assets/image/logo.png"
-#   min_sdk_android: 21 # android min sdk min:16, default 21
-
-# flutter_native_splash:
-#   color: "#ffffff"
-#   image: "assets/image/white_bg.png"
-#   android_12:
-#     color: "#ffffff"
-#     image: "assets/image/white_bg.png"
-
 
 flutter:
   uses-material-design: true
@@ -110,6 +95,14 @@ flutter:
     - assets/videos/
 
   fonts:
+    - family: 29ltbukra
+      fonts:
+        - asset:  assets/fonts/29ltbukra/29ltbukralight.ttf
+          weight: 300
+        - asset:  assets/fonts/29ltbukra/29ltbukraregular.ttf
+          weight: 400
+        - asset:  assets/fonts/29ltbukra/29ltbukrabold.ttf
+          weight: 700
     - family: Cairo
       fonts:
         - asset: assets/fonts/cairo/Cairo-Bold.ttf
