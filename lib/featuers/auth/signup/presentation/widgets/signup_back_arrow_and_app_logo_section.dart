@@ -1,5 +1,3 @@
-import 'package:senior_code_app/core/extensions.dart';
-
 import '../../../../../core/widgets/senior_code_app_bar.dart';
 import '../../../../../core/widgets/senior_code_icon.dart';
 import '../../../../../exports.dart';
@@ -9,14 +7,17 @@ class SignupBackArrowAndAppLogoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const SeniorCodeAppBar(
+        SeniorCodeAppBar(
           height: 15.62,
           width: 18.11,
         ),
-        25.hs,
-        const SeniorCodeIcon(),
+        Expanded(
+          child: Center(
+            child: SeniorCodeIcon(),
+          ),
+        ),
       ],
     );
   }
