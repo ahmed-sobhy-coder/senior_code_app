@@ -3,13 +3,13 @@ import 'package:senior_code_app/core/extensions.dart';
 import 'package:video_player/video_player.dart';
 
 // PlayPauseButton widget to control video playback
-class onBoardingPlayPauseButton extends StatelessWidget {
+class OnBoardingPlayPauseButton extends StatelessWidget {
   final VideoPlayerController controller; // Controller to manage video playback
   final ValueNotifier<bool>
       isPlayingNotifier; // Notifier to track play/pause state
 
   // Constructor for PlayPauseButton
-  const onBoardingPlayPauseButton({
+  const OnBoardingPlayPauseButton({
     super.key,
     required this.controller, // Required VideoPlayerController
     required this.isPlayingNotifier, // Required ValueNotifier for play state

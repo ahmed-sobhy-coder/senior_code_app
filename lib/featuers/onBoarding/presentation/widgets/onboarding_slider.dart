@@ -162,7 +162,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                       // Custom app bar for the onboarding screen
                       OnBoardingAppBarWidget(value: index),
                       // Play/pause button for the current video
-                      onBoardingPlayPauseButton(
+                      OnBoardingPlayPauseButton(
                           controller: _videoControllers[_currentPageIndex],
                           isPlayingNotifier:
                               _isPlayingNotifiers[_currentPageIndex]),
