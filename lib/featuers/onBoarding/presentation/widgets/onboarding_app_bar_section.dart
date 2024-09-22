@@ -4,10 +4,10 @@ import 'package:senior_code_app/core/extensions.dart';
 import '../../../../core/utils/app_styels.dart';
 import 'onboarding_slider.dart';
 
-class AppBarWidget extends StatelessWidget {
+class OnBoardingAppBarWidget extends StatelessWidget {
   final int value;
 
-  const AppBarWidget({super.key, required this.value});
+  const OnBoardingAppBarWidget({super.key, required this.value});
 
   @override
   Widget build(BuildContext context) {
@@ -16,18 +16,20 @@ class AppBarWidget extends StatelessWidget {
       left: 0.w,
       right: 0.w,
       child: Padding(
-        padding:  EdgeInsets.only(top: 76.h),
+        padding: EdgeInsets.only(top: 76.h),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
               icon: const Icon(Icons.arrow_back, color: Colors.white),
-              onPressed: value > 0 ? () {
-                OnBoardingSlider.pageController.previousPage(
-                  duration: const Duration(milliseconds: 300),
-                  curve: Curves.easeIn,
-                );
-              } : null,
+              onPressed: value > 0
+                  ? () {
+                      OnBoardingSlider.pageController.previousPage(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeIn,
+                      );
+                    }
+                  : null,
             ),
             if (value < 2)
               TextButton(
@@ -36,7 +38,8 @@ class AppBarWidget extends StatelessWidget {
                 },
                 child: Text(
                   'Skip',
-                  style: AppStyles.getBoldStyle(fontSize: 20, color: Colors.white),
+                  style:
+                      AppStyles.getBoldStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
           ],

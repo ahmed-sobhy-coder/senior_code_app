@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:senior_code_app/core/extensions.dart';
-import 'package:senior_code_app/featuers/onBoarding/presentation/widgets/app_bar.dart';
+import 'package:senior_code_app/featuers/onBoarding/presentation/widgets/onboarding_app_bar_section.dart';
 import 'package:video_player/video_player.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styels.dart';
 import '../../data/onboarding_model.dart';
-import 'on_boarding_button.dart';
+import 'onboarding_button.dart';
 import 'play_pause_button.dart';
 import 'video_widget.dart';
 
@@ -20,8 +20,7 @@ class OnBoardingSlider extends StatefulWidget {
   // Map to store onboarding text titles
   static final onBoardingTexts = {
     'FirstOnBoardingTitleWord': AppStrings.firstLineOnBoardingScreenTitleWord,
-    'SecondOnBoardingTitleWord':
-        AppStrings.secondLineOnBoardingScreenTitleWord,
+    'SecondOnBoardingTitleWord': AppStrings.secondLineOnBoardingScreenTitleWord,
     'ThirdOnBoardingTitleWord': AppStrings.thirdLineOnBoardingScreenTitleWord,
   };
 
@@ -158,11 +157,12 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                     alignment: Alignment.center,
                     children: [
                       // Video widget to display the onboarding video
-                      VideoWidget(controller: _videoControllers[index]),
+                      OnBoardingVideoWidget(
+                          controller: _videoControllers[index]),
                       // Custom app bar for the onboarding screen
-                      AppBarWidget(value: index),
+                      OnBoardingAppBarWidget(value: index),
                       // Play/pause button for the current video
-                      PlayPauseButton(
+                      onBoardingPlayPauseButton(
                           controller: _videoControllers[_currentPageIndex],
                           isPlayingNotifier:
                               _isPlayingNotifiers[_currentPageIndex]),

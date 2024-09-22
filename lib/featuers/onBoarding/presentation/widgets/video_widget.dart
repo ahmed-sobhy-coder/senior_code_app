@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 // Importing the video_player package to handle video playback functionality.
 import 'package:video_player/video_player.dart';
 
-class VideoWidget extends StatelessWidget {
+class OnBoardingVideoWidget extends StatelessWidget {
   final VideoPlayerController controller;
 
-  const VideoWidget({super.key, required this.controller});
+  const OnBoardingVideoWidget({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {

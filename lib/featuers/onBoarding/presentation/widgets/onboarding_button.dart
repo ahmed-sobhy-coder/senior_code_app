@@ -22,14 +22,15 @@ class NextButton extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 30.5.w),
         child: AppTextButton(
           onPressed: () {
-            if (value < 1) {
+            if (value < 2) {
+              // Move to the next page if the value is less than 2
               OnBoardingSlider.pageController.nextPage(
                 duration: const Duration(milliseconds: 300),
                 curve: Curves.easeIn,
               );
             } else if (value == 2) {
+              // Navigate to the sign-in route if value is 2
               Navigator.pushReplacementNamed(context, Routes.signinRoute);
-              // Routes.signinRoute.pushReplacement;
             }
           },
           backgroundColor: AppColors.lighterBlueColor,
