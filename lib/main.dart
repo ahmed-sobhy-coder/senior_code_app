@@ -6,9 +6,9 @@ void main() async {
   // Ensures that the binding is initialized
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Simulate a delay for the splash screen
+  //  A delay for the splash screen
   await Future.delayed(
-    const Duration(seconds: 5),
+    const Duration(seconds: 2),
   );
 
   runApp(
