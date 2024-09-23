@@ -1,7 +1,7 @@
 import 'package:senior_code_app/core/extensions.dart';
 
-import '../../../../../core/utils/app_styels.dart';
-import '../../../../../exports.dart';
+import '../../../../core/utils/app_styels.dart';
+import '../../../../exports.dart';
 
 class PortfolioSeeAll extends StatelessWidget {
   const PortfolioSeeAll({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:senior_code_app/core/extensions.dart';
-import 'category_listview_item.dart';
+import 'home_category_listview_item.dart';
 
 class CategoryListView extends StatelessWidget {
   const CategoryListView({
