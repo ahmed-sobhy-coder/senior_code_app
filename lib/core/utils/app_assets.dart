@@ -54,9 +54,9 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}second_home_category.png";
   static const String thirdHomeCategory =
       "${PngAssets.pngAssets}third_home_category.png";
- static const String khedmtyTestPortfolio =
+  static const String khedmtyTestPortfolio =
       "${PngAssets.pngAssets}khedmty_test_portfolio.png";
-      static const String realStateTestPortfolio =
+  static const String realStateTestPortfolio =
       "${PngAssets.pngAssets}real_state_project.png";
   // Icons SVG
   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
@@ -134,8 +134,12 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${SvgAssets.svgAssets}yellow_locatiom.svg";
   static const String onBoardingBackgroundIcon =
       "${SvgAssets.svgAssets}onboarding_background.svg";
-      static const String locationIcon =
-      "${SvgAssets.svgAssets}location.svg";
+  static const String locationIcon = "${SvgAssets.svgAssets}location.svg";
+  static const String personIcon = "${SvgAssets.svgAssets}person_icon.svg";
+  static const String trendingUpIcon = "${SvgAssets.svgAssets}trending-up.svg";
+  static const String pendingIcon = "${SvgAssets.svgAssets}pending_icon.svg";
+  static const String projectIcon = "${SvgAssets.svgAssets}project_icon.svg";
+  static const String salesIcon = "${SvgAssets.svgAssets}sales_icon.svg";
 
   // Video Assets
   static const String testOnBoardingVideo =

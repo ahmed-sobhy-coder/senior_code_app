@@ -8,6 +8,7 @@ import 'protfolio_and_sections/home_protfolio_and_sections_see_all_section.dart'
 import 'home_top_name_and_abours_us_bar.dart';
 import 'portfolio/home_portfolio_list_view_section.dart';
 import 'sections/home_sections_list_view_section.dart';
+import 'statistics/statistics_grid_section.dart';
 
 class HomeScreenBodySection extends StatelessWidget {
   const HomeScreenBodySection({super.key});
@@ -36,6 +37,8 @@ class HomeScreenBodySection extends StatelessWidget {
         ),
         8.vs,
         const SectionListView(),
+        64.vs,
+        const StatisticsGridSection(),
       ],
     );
   }

@@ -127,6 +127,10 @@ class AppColors {
   static const Color textTitle = Color(0xFF101010);
   static const Color textCount = Color(0xFF363F4F);
   static const Color richBlack = Color(0xFF060527);
+    static const Color charcoal = Color(0xFF202224);
+        static const Color turquoiseGreen = Color(0xFF00B69B);
+
+
 
   static const Color yellow = Color(0xFFFE8C00);
 
