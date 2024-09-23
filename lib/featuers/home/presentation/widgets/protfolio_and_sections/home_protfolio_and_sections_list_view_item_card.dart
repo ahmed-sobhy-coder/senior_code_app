@@ -1,9 +1,9 @@
 import 'package:senior_code_app/core/extensions.dart';
 import 'package:senior_code_app/exports.dart';
 
-import 'home_protfolio_list_view_card_body.dart';
+import 'home_protfolio_and_sections_list_view_card_body.dart';
 
-class PortfolioListViewItem extends StatelessWidget {
+class PortfolioAndSectionsListViewItemCard extends StatelessWidget {
   final String title;
   final String categoryTitle;
   final String projectDuration;
@@ -13,6 +13,7 @@ class PortfolioListViewItem extends StatelessWidget {
   final VoidCallback? onSecondButtonTap;
   final String? firstButtonText;
   final String? secondButtonText;
+  final double? elevation;
 
   // Sizes and padding
   final double? projectImageWidth;
@@ -27,8 +28,16 @@ class PortfolioListViewItem extends StatelessWidget {
   // Button visibility
   final bool showFirstButton;
   final bool showSecondButton;
+  // Padding
+  final double? imageRightPadding;
+  // Spaces
+  final double? spaceBetweenCategoryTitleAndProjectDuration;
+  final double? spaceBetweenDuartionAndLocation;
+  final double? spaceBetweenIconAndLocation;
+  final double? spaceBeforeButtonsFromTop;
+  final double? spaceBetweenButtons;
 
-  const PortfolioListViewItem({
+  const PortfolioAndSectionsListViewItemCard({
     super.key,
     required this.title,
     required this.categoryTitle,
@@ -39,14 +48,20 @@ class PortfolioListViewItem extends StatelessWidget {
     this.onSecondButtonTap,
     this.firstButtonText,
     this.secondButtonText,
-    this.projectImageWidth, // Default width
-    this.projectImageHeight, // Default height
+    this.projectImageWidth,
+    this.projectImageHeight,
     this.titleStyle,
     this.categoryTitleStyle,
     this.projectDurationStyle,
     this.projectLocationStyle,
     this.showFirstButton = true, // First button visibility (default is true)
     this.showSecondButton = true, // Second button visibility (default is true)
+    this.imageRightPadding,
+    this.spaceBetweenCategoryTitleAndProjectDuration,
+    this.spaceBetweenDuartionAndLocation,
+    this.spaceBetweenIconAndLocation,
+    this.spaceBeforeButtonsFromTop,
+    this.spaceBetweenButtons, this.elevation,
   });
 
   @override
@@ -54,7 +69,7 @@ class PortfolioListViewItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 12.h), // Flexible padding
       child: Card(
-        elevation: 4,
+        elevation: elevation??4,
         color: AppColors.white,
         child: Padding(
           padding: EdgeInsets.only(
@@ -62,7 +77,7 @@ class PortfolioListViewItem extends StatelessWidget {
             top: 24.h,
             bottom: 21.h,
           ),
-          child: ProtfolioListViewCardBody(
+          child: ProtfolioAndSectionsListViewCardBody(
             title: title,
             categoryTitle: categoryTitle,
             projectDuration: projectDuration,
@@ -74,6 +89,10 @@ class PortfolioListViewItem extends StatelessWidget {
             onSecondButtonTap: onSecondButtonTap,
             showFirstButton: showFirstButton,
             showSecondButton: showSecondButton,
+            imageRightPadding: imageRightPadding,
+            spaceBetweenCategoryTitleAndProjectDuration:
+                spaceBetweenCategoryTitleAndProjectDuration,
+            spaceBetweenDuartionAndLocation: spaceBetweenDuartionAndLocation,
           ),
         ),
       ),

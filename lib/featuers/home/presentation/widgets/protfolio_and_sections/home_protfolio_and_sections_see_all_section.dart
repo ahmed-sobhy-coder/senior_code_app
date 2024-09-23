@@ -1,10 +1,11 @@
 import 'package:senior_code_app/core/extensions.dart';
 
-import '../../../../core/utils/app_styels.dart';
-import '../../../../exports.dart';
+import '../../../../../core/utils/app_styels.dart';
+import '../../../../../exports.dart';
 
-class PortfolioSeeAll extends StatelessWidget {
-  const PortfolioSeeAll({super.key});
+class HomeSeeAll extends StatelessWidget {
+  final String textData;
+  const HomeSeeAll({super.key, required this.textData});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class PortfolioSeeAll extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "Portfolio",
+            textData,
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
             style: AppStyles.getSemiBoldStyle(

@@ -56,6 +56,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}third_home_category.png";
  static const String khedmtyTestPortfolio =
       "${PngAssets.pngAssets}khedmty_test_portfolio.png";
+      static const String realStateTestPortfolio =
+      "${PngAssets.pngAssets}real_state_project.png";
   // Icons SVG
   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String calenderIcon = "${SvgAssets.svgAssets}calendar.svg";
