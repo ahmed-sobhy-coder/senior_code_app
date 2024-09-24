@@ -10,6 +10,8 @@ class Routes {
   static const String verificationRoute = "VerificationScreen";
   static const String resetPasswordRoute = "ResetPasswordScreen";
     static const String homeRoute = "HomeScreen";
+        static const String bottomNavigationBar = "BottomNavigationBar";
+
 
 }
 
@@ -40,6 +42,10 @@ class RouteGenerator {
       case Routes.homeRoute:
         return MaterialPageRoute(
           builder: (context) => const HomeScreen(),
+        );
+        case Routes.bottomNavigationBar:
+        return MaterialPageRoute(
+          builder: (context) =>  BottomNivigationBar(),
         );
       // Default:
       default:

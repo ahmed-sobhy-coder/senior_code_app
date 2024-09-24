@@ -3,7 +3,6 @@ import 'package:senior_code_app/core/extensions.dart';
 import '../../../../exports.dart';
 import '../widgets/home_screen_body_section.dart';
 
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

@@ -80,7 +80,7 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
         24.vs,
         AppTextButton(
           onPressed: () {
-            Navigator.pushNamed(context, Routes.homeRoute);
+            Navigator.pushNamed(context, Routes.bottomNavigationBar);
           },
           backgroundColor: AppColors.mainButtonBlueColor,
           buttonWidth: 327.w,

@@ -75,7 +75,6 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String rectangleIcon = "${SvgAssets.svgAssets}rectangle.svg";
   static const String backIcon = "${SvgAssets.svgAssets}arrow-left.svg";
   static const String starIcon = "${SvgAssets.svgAssets}star.svg";
-  static const String chatIcon = "${SvgAssets.svgAssets}chat.svg";
   static const String phoneIcon = "${SvgAssets.svgAssets}phone.svg";
   static const String carTripIcon = "${SvgAssets.svgAssets}car_trips.svg";
   static const String userIcon = "${SvgAssets.svgAssets}user.svg";
@@ -89,7 +88,6 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String eyeIcon = "${SvgAssets.svgAssets}eye.svg";
   static const String googleIcon = "${SvgAssets.svgAssets}google.svg";
   static const String facebookIcon = "${SvgAssets.svgAssets}facebook.svg";
-  static const String homeIcon = "${SvgAssets.svgAssets}home.svg";
   static const String locationTravelIcon =
       "${SvgAssets.svgAssets}location_travel.svg";
   static const String settingIcon = "${SvgAssets.svgAssets}setting.svg";
@@ -140,6 +138,11 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String pendingIcon = "${SvgAssets.svgAssets}pending_icon.svg";
   static const String projectIcon = "${SvgAssets.svgAssets}project_icon.svg";
   static const String salesIcon = "${SvgAssets.svgAssets}sales_icon.svg";
+  static const String chatIcon = "${SvgAssets.svgAssets}chat.svg";
+  static const String profileIcon = "${SvgAssets.svgAssets}profile.svg";
+  static const String homeIcon = "${SvgAssets.svgAssets}home.svg";
+  static const String reservationIcon = "${SvgAssets.svgAssets}reservation.svg";
+  static const String reviewsIcon = "${SvgAssets.svgAssets}reviews.svg";
 
   // Video Assets
   static const String testOnBoardingVideo =
