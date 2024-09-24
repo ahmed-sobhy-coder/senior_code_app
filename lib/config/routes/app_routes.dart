@@ -45,7 +45,7 @@ class RouteGenerator {
         );
         case Routes.bottomNavigationBar:
         return MaterialPageRoute(
-          builder: (context) =>  BottomNivigationBar(),
+          builder: (context) =>  const CustomBottomNavigationBar(),
         );
       // Default:
       default:

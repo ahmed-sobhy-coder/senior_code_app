@@ -1,9 +1,9 @@
+// bottom_navigation_bar_item.dart
 import 'package:senior_code_app/core/extensions.dart';
 import 'package:senior_code_app/core/utils/app_styels.dart';
-import '../../../../core/widgets/custome_svg_image.dart';
-import '../../../../exports.dart';
+import '../custome_svg_image.dart';
+import '../../../exports.dart';
 
-// Custom Bottom Navigation Bar Item builder
 BottomNavigationBarItem buildBottomNavBarItem({
   required String asset,
   required String activeAsset,
@@ -56,7 +56,7 @@ BottomNavigationBarItem buildBottomNavBarItem({
         ),
       ],
     ),
-    //! Keep label empty since we're adding a Text widget manually
+    //! No label since we're adding a custom Text widget
     label: '',
   );
 }
