@@ -4,8 +4,9 @@ import '../../../../../core/utils/app_styels.dart';
 import '../../../../../exports.dart';
 
 class HomeSeeAll extends StatelessWidget {
+  final void Function() seeAllOnTap;
   final String textData;
-  const HomeSeeAll({super.key, required this.textData});
+  const HomeSeeAll({super.key, required this.textData,required this.seeAllOnTap});
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +25,17 @@ class HomeSeeAll extends StatelessWidget {
               fontFamily: FontFamilies.poppinsFamily,
             ),
           ),
-          Text(
-            "See All",
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-            style: AppStyles.getSemiBoldStyle(
-              fontSize: 16,
-              color: AppColors.richBlack,
-              fontFamily: FontFamilies.poppinsFamily,
+          GestureDetector(
+            onTap:seeAllOnTap ,
+            child: Text(
+              "See All",
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+              style: AppStyles.getSemiBoldStyle(
+                fontSize: 16,
+                color: AppColors.richBlack,
+                fontFamily: FontFamilies.poppinsFamily,
+              ),
             ),
           ),
         ],

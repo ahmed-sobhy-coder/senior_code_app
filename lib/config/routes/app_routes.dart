@@ -1,4 +1,3 @@
-
 import '../../exports.dart';
 import 'routes_exports.dart';
 
@@ -9,10 +8,9 @@ class Routes {
   static const String signupRoute = "SignupScreen";
   static const String verificationRoute = "VerificationScreen";
   static const String resetPasswordRoute = "ResetPasswordScreen";
-    static const String homeRoute = "HomeScreen";
-        static const String bottomNavigationBar = "BottomNavigationBar";
-
-
+  static const String homeRoute = "HomeScreen";
+  static const String bottomNavigationBar = "BottomNavigationBar";
+  static const String sectionsRoute = "SectionScreen";
 }
 
 class RouteGenerator {
@@ -43,9 +41,13 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (context) => const HomeScreen(),
         );
-        case Routes.bottomNavigationBar:
+      case Routes.bottomNavigationBar:
         return MaterialPageRoute(
-          builder: (context) =>  const CustomBottomNavigationBar(),
+          builder: (context) => const CustomBottomNavigationBar(),
+        );
+      case Routes.sectionsRoute:
+        return MaterialPageRoute(
+          builder: (context) => const SectionsScreen(),
         );
       // Default:
       default:

@@ -14,7 +14,7 @@ class VerificationAppBarAndImageAndTimer extends StatelessWidget {
         const Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SeniorCodeAppBar(
+            SeniorCodeAppBarArrow(
               backArrowIconColor: AppColors.black,
               height: 16,
               width: 16,
