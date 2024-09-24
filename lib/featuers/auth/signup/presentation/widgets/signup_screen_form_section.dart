@@ -118,7 +118,13 @@ class _SignupScreenFormSectionState extends State<SignupScreenFormSection> {
         ),
         2.vs,
         DatePickerTextField(
-          hintStyle: AppStyles.getMediumStyle(fontSize: 14),
+            pickedDateColor: AppColors.black, // The picked date color here
+
+          fillColor: AppColors.white,
+          hintStyle: AppStyles.getMediumStyle(
+            fontSize: 14,
+            color: AppColors.black,
+          ),
           controller: _dateController,
           initialDate: _selectedDate,
           onDateSelected: _onDateSelected,

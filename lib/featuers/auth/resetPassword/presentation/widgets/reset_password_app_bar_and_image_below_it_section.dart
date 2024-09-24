@@ -13,7 +13,7 @@ class ResetPasswordAppBarAndImageBelowItSection extends StatelessWidget {
         const Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SeniorCodeAppBar(
+            SeniorCodeAppBarArrow(
               height: 24,
               width: 24,
               backArrowIconColor: AppColors.black,

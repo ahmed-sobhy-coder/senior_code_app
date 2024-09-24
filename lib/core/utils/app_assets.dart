@@ -58,6 +58,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}khedmty_test_portfolio.png";
   static const String realStateTestPortfolio =
       "${PngAssets.pngAssets}real_state_project.png";
+  static const String graphicDesignImage =
+      "${PngAssets.pngAssets}graphic_design_image.png";
   // Icons SVG
   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String calenderIcon = "${SvgAssets.svgAssets}calendar.svg";
@@ -143,6 +145,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String homeIcon = "${SvgAssets.svgAssets}home.svg";
   static const String reservationIcon = "${SvgAssets.svgAssets}reservation.svg";
   static const String reviewsIcon = "${SvgAssets.svgAssets}reviews.svg";
+  static const String verticalLineIcon =
+      "${SvgAssets.svgAssets}vertical_line.svg";
 
   // Video Assets
   static const String testOnBoardingVideo =

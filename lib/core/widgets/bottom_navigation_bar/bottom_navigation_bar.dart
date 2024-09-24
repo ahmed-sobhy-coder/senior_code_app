@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:senior_code_app/exports.dart';
 import '../../../featuers/home/presentation/screens/home_screen.dart';
+import '../../../featuers/reservation/presentation/screen/reservation_screen.dart';
 import 'bottom_navigation_bar_body.dart'; // Import the new BottomNavBarBody widget
 
 class CustomBottomNavigationBar extends StatefulWidget {
@@ -56,21 +57,6 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-
-// Reservation Screen
-class ReservationScreen extends StatelessWidget {
-  const ReservationScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Reservation Screen',
-      ),
-    );
-  }
-}
-
 // Reviews Screen
 class ReviewsScreen extends StatelessWidget {
   const ReviewsScreen({super.key});

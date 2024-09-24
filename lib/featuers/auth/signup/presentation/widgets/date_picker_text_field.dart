@@ -4,7 +4,7 @@ import 'package:senior_code_app/core/extensions.dart';
 
 import '../../../../../core/utils/app_colors.dart';
 
-class DatePickerTextField extends StatelessWidget {
+class DatePickerTextField extends StatefulWidget {
   final TextEditingController controller;
   final DateTime? initialDate;
   final Function(DateTime) onDateSelected;
@@ -16,6 +16,7 @@ class DatePickerTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final Color? fillColor;
   final int? radius;
+  final Color pickedDateColor; // New parameter for picked date color
 
   const DatePickerTextField({
     super.key,
@@ -30,63 +31,88 @@ class DatePickerTextField extends StatelessWidget {
     this.suffixIcon,
     this.fillColor,
     this.radius,
+    this.pickedDateColor = Colors.black, // Default to black
   });
+
+  @override
+  _DatePickerTextFieldState createState() => _DatePickerTextFieldState();
+}
+
+class _DatePickerTextFieldState extends State<DatePickerTextField> {
+  late FocusNode _focusNode;
+
+  @override
+  void initState() {
+    super.initState();
+    _focusNode = FocusNode();
+  }
+
+  @override
+  void dispose() {
+    _focusNode.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      controller: controller,
+      focusNode: _focusNode,
+      controller: widget.controller,
+      style: widget.inputStyle ??
+          TextStyle(color: widget.pickedDateColor), // Use picked date color
       decoration: InputDecoration(
         isDense: true,
-        contentPadding: contentPadding ??
+        contentPadding: widget.contentPadding ??
             EdgeInsets.symmetric(horizontal: 23.0.w, vertical: 16.0.h),
-        focusedBorder: focusedBorder ??
+        focusedBorder: widget.focusedBorder ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(radius?.toDouble() ?? 10.0.r),
-              borderSide:
-                  BorderSide(color: Theme.of(context).primaryColor, width: 1.w),
+              borderRadius:
+                  BorderRadius.circular(widget.radius?.toDouble() ?? 10.0.r),
+              borderSide: BorderSide(color: Colors.white, width: 1.3.w),
             ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radius?.toDouble() ?? 10.0.r),
-          borderSide: BorderSide(color: Colors.grey, width: 1.0.w),
+          borderRadius:
+              BorderRadius.circular(widget.radius?.toDouble() ?? 10.0.r),
+          borderSide: BorderSide(color: Colors.white, width: 1.3.w),
         ),
-        hintStyle: hintStyle ??
-            const TextStyle(
-              color: Colors.black,
+        hintStyle: widget.hintStyle ??
+            TextStyle(
+              color: _focusNode.hasFocus ? Colors.white : Colors.white,
             ),
-        hintText: hintText,
-        suffixIcon: suffixIcon,
-        fillColor: fillColor ?? Colors.white,
+        hintText: widget.hintText,
+        suffixIcon: widget.suffixIcon,
+        fillColor: widget.fillColor ?? Colors.transparent,
         filled: true,
         errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radius?.toDouble() ?? 10.0.r),
-          borderSide: BorderSide(color: Colors.red, width: 1.0.w),
+          borderRadius:
+              BorderRadius.circular(widget.radius?.toDouble() ?? 10.0.r),
+          borderSide: BorderSide(color: Colors.red, width: 1.3.w),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radius?.toDouble() ?? 10.0.r),
-          borderSide: BorderSide(color: Colors.red, width: 1.0.w),
+          borderRadius:
+              BorderRadius.circular(widget.radius?.toDouble() ?? 10.0.r),
+          borderSide: BorderSide(color: Colors.red, width: 1.3.w),
         ),
       ),
       readOnly: true,
       onTap: () async {
         DateTime? pickedDate = await showDatePicker(
           context: context,
-          initialDate: initialDate ?? DateTime.now(),
+          initialDate: widget.initialDate ?? DateTime.now(),
           firstDate: DateTime(1950),
           lastDate: DateTime(2100),
           builder: (BuildContext context, Widget? child) {
             return Theme(
               data: Theme.of(context).copyWith(
                 colorScheme: const ColorScheme.light(
-                  primary: AppColors
-                      .thirdPrimaryColor, // Header and selected day background color
-                  onPrimary: AppColors.white, // Background color of the picker
-                  surface: AppColors.white, // Surface color
-                  onSurface: AppColors.black, // Month days, years
+                  primary: AppColors.thirdPrimaryColor, // Header background
+                  onPrimary: AppColors.white, // Header text color
+                  surface: AppColors.white, // Dialog background color
+                  onSurface: AppColors.black, // Text color
                 ),
                 textButtonTheme: TextButtonThemeData(
                   style: TextButton.styleFrom(
-                    foregroundColor: AppColors.black, // OK, Cancel buttons
+                    foregroundColor: AppColors.black, // Button text color
                   ),
                 ),
               ),
@@ -95,12 +121,12 @@ class DatePickerTextField extends StatelessWidget {
           },
         );
 
-        String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate!);
-        controller.text = formattedDate; // Set output date to TextField value
-        onDateSelected(
-          pickedDate,
-        ); // Call the callback function with the selected date
-            },
+        if (pickedDate != null) {
+          String formattedDate = DateFormat('yyyy-MM-dd').format(pickedDate);
+          widget.controller.text = formattedDate; // Set output date
+          widget.onDateSelected(pickedDate);
+        }
+      },
     );
   }
 }

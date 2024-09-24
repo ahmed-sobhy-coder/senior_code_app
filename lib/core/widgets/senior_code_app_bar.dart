@@ -3,11 +3,11 @@ import 'package:senior_code_app/core/widgets/custome_svg_image.dart';
 
 import '../../exports.dart';
 
-class SeniorCodeAppBar extends StatelessWidget {
+class SeniorCodeAppBarArrow extends StatelessWidget {
   final Color? backArrowIconColor;
   final double? height;
   final double? width;
-  const SeniorCodeAppBar({
+  const SeniorCodeAppBarArrow({
     super.key,
     this.backArrowIconColor,
     this.height,
