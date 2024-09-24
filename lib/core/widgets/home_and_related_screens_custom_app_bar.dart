@@ -1,28 +1,30 @@
 import 'package:senior_code_app/core/extensions.dart';
 
-import '../../../../core/utils/app_styels.dart';
-import '../../../../core/widgets/senior_code_app_bar.dart';
-import '../../../../exports.dart';
+import '../utils/app_styels.dart';
+import 'senior_code_app_bar.dart';
+import '../../exports.dart';
 
-class HomeCustomAppBar extends StatelessWidget {
-  const HomeCustomAppBar(
-      {super.key,
-      this.homeCustomAppBarHorizontalPadding,
-      this.homeCustomSeniorCodeAppBarArrowHeight,
-      this.homeCustomSeniorCodeAppBarArrowWidth,
-      required this.homeCustomAppBarTextData,
-      this.homeCustomAppBarTextDataStyle});
+class HomeAndRelatedScreensCustomAppBar extends StatelessWidget {
   final double? homeCustomAppBarHorizontalPadding;
   final double? homeCustomSeniorCodeAppBarArrowHeight;
   final double? homeCustomSeniorCodeAppBarArrowWidth;
   final String homeCustomAppBarTextData;
   final TextStyle? homeCustomAppBarTextDataStyle;
+  const HomeAndRelatedScreensCustomAppBar({
+    super.key,
+    this.homeCustomAppBarHorizontalPadding,
+    this.homeCustomSeniorCodeAppBarArrowHeight,
+    this.homeCustomSeniorCodeAppBarArrowWidth,
+    required this.homeCustomAppBarTextData,
+    this.homeCustomAppBarTextDataStyle,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: homeCustomAppBarHorizontalPadding?.w ?? 22.w),
+        horizontal: homeCustomAppBarHorizontalPadding?.w ?? 22.w,
+      ),
       child: Row(
         children: [
           SeniorCodeAppBarArrow(
