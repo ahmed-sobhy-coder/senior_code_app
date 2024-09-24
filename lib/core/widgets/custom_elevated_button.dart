@@ -12,7 +12,7 @@ class CustomElevatedButton extends StatelessWidget {
       this.boxShadow,
       required this.onPressed,
       required this.text,
-      this.color ,
+      this.color,
       this.padding,
       this.side = BorderSide.none,
       this.radius = 10,
@@ -21,7 +21,7 @@ class CustomElevatedButton extends StatelessWidget {
       this.width,
       this.textColor = AppColors.white,
       this.style,
-      this.margin});
+      this.margin, this.buttonStyle});
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
   final void Function()? onPressed;
@@ -37,27 +37,25 @@ class CustomElevatedButton extends StatelessWidget {
   final TextStyle? style;
   final double? elevation;
   final List<BoxShadow>? boxShadow;
+  final ButtonStyle? buttonStyle;
   @override
   Widget build(BuildContext context) {
     return _buildButton;
   }
 
   get _buildButton => ElevatedButton(
-    
-        style: ElevatedButton.styleFrom(
-          
-          backgroundColor: color??AppColors.primaryColor,
+        style: buttonStyle??ElevatedButton.styleFrom(
+          backgroundColor: color ?? AppColors.primaryColor,
           elevation: elevation,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius!), side: side),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(radius!), side: side),
           padding: padding ?? getPadding(vertical: 13.h),
         ),
-        
         onPressed: onPressed,
         child: _buildButtonContent,
       );
 
   get _buildButtonContent => Row(
-    
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -65,9 +63,13 @@ class CustomElevatedButton extends StatelessWidget {
           if (leftIcon.isNotNull) 10.hs,
           Text(
             text,
-            textScaler:const TextScaler.linear(1),
+            textScaler: const TextScaler.linear(1),
             textAlign: TextAlign.center,
-            style: style ?? AppStyles.getBoldStyle(color: AppColors.white, fontSize: 16,),
+            style: style ??
+                AppStyles.getBoldStyle(
+                  color: AppColors.white,
+                  fontSize: 16,
+                ),
           ),
           if (rightIcon.isNotNull) rightIcon!,
         ],

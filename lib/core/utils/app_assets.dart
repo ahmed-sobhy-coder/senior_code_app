@@ -45,7 +45,19 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}verification_character.png";
   static const String resetPasswordImage =
       "${PngAssets.pngAssets}rest_passworrd_floor.png";
-
+  static const String womanHome = "${PngAssets.pngAssets}home_woman.png";
+  static const String homeDarkBlueContainer =
+      "${PngAssets.pngAssets}home_darkblue_container.png";
+  static const String firstHomeCategory =
+      "${PngAssets.pngAssets}first_home_category.png";
+  static const String secondHomeCategory =
+      "${PngAssets.pngAssets}second_home_category.png";
+  static const String thirdHomeCategory =
+      "${PngAssets.pngAssets}third_home_category.png";
+  static const String khedmtyTestPortfolio =
+      "${PngAssets.pngAssets}khedmty_test_portfolio.png";
+  static const String realStateTestPortfolio =
+      "${PngAssets.pngAssets}real_state_project.png";
   // Icons SVG
   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String calenderIcon = "${SvgAssets.svgAssets}calendar.svg";
@@ -63,7 +75,6 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String rectangleIcon = "${SvgAssets.svgAssets}rectangle.svg";
   static const String backIcon = "${SvgAssets.svgAssets}arrow-left.svg";
   static const String starIcon = "${SvgAssets.svgAssets}star.svg";
-  static const String chatIcon = "${SvgAssets.svgAssets}chat.svg";
   static const String phoneIcon = "${SvgAssets.svgAssets}phone.svg";
   static const String carTripIcon = "${SvgAssets.svgAssets}car_trips.svg";
   static const String userIcon = "${SvgAssets.svgAssets}user.svg";
@@ -77,7 +88,6 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String eyeIcon = "${SvgAssets.svgAssets}eye.svg";
   static const String googleIcon = "${SvgAssets.svgAssets}google.svg";
   static const String facebookIcon = "${SvgAssets.svgAssets}facebook.svg";
-  static const String homeIcon = "${SvgAssets.svgAssets}home.svg";
   static const String locationTravelIcon =
       "${SvgAssets.svgAssets}location_travel.svg";
   static const String settingIcon = "${SvgAssets.svgAssets}setting.svg";
@@ -122,6 +132,17 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${SvgAssets.svgAssets}yellow_locatiom.svg";
   static const String onBoardingBackgroundIcon =
       "${SvgAssets.svgAssets}onboarding_background.svg";
+  static const String locationIcon = "${SvgAssets.svgAssets}location.svg";
+  static const String personIcon = "${SvgAssets.svgAssets}person_icon.svg";
+  static const String trendingUpIcon = "${SvgAssets.svgAssets}trending-up.svg";
+  static const String pendingIcon = "${SvgAssets.svgAssets}pending_icon.svg";
+  static const String projectIcon = "${SvgAssets.svgAssets}project_icon.svg";
+  static const String salesIcon = "${SvgAssets.svgAssets}sales_icon.svg";
+  static const String chatIcon = "${SvgAssets.svgAssets}chat.svg";
+  static const String profileIcon = "${SvgAssets.svgAssets}profile.svg";
+  static const String homeIcon = "${SvgAssets.svgAssets}home.svg";
+  static const String reservationIcon = "${SvgAssets.svgAssets}reservation.svg";
+  static const String reviewsIcon = "${SvgAssets.svgAssets}reviews.svg";
 
   // Video Assets
   static const String testOnBoardingVideo =

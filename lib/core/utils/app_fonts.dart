@@ -8,6 +8,8 @@ class FontFamilies {
   static const String manrope = "Manrope";
   static const String cairoFamily = "Cairo";
   static const String fontFamily29ltbukra = '29ltbukra';
+  static const String fontFamilyDMSans = 'DMSans';
+  static const String fontFamilyNunitoSans = 'NunitoSans';
 }
 
 class FontWeights {

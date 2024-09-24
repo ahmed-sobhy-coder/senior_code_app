@@ -1,4 +1,3 @@
-import 'package:senior_code_app/featuers/auth/resetPassword/presentation/screens/reset_password_screen.dart';
 
 import '../../exports.dart';
 import 'routes_exports.dart';
@@ -9,7 +8,10 @@ class Routes {
   static const String signinRoute = "SigninScreen";
   static const String signupRoute = "SignupScreen";
   static const String verificationRoute = "VerificationScreen";
-    static const String resetPasswordRoute = "ResetPasswordScreen";
+  static const String resetPasswordRoute = "ResetPasswordScreen";
+    static const String homeRoute = "HomeScreen";
+        static const String bottomNavigationBar = "BottomNavigationBar";
+
 
 }
 
@@ -28,15 +30,23 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (context) => const SignupScreen(),
         );
-         case Routes.verificationRoute:
+      case Routes.verificationRoute:
         return MaterialPageRoute(
           builder: (context) => const VerificationScreen(),
         );
-        case Routes.resetPasswordRoute:
+      case Routes.resetPasswordRoute:
         return MaterialPageRoute(
           builder: (context) => const ResetPasswordScreen(),
         );
-
+      //! Home Routes
+      case Routes.homeRoute:
+        return MaterialPageRoute(
+          builder: (context) => const HomeScreen(),
+        );
+        case Routes.bottomNavigationBar:
+        return MaterialPageRoute(
+          builder: (context) =>  const CustomBottomNavigationBar(),
+        );
       // Default:
       default:
         return null;

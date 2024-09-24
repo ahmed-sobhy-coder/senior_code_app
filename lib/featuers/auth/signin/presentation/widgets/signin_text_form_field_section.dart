@@ -1,5 +1,6 @@
 import 'package:senior_code_app/core/extensions.dart';
 
+import '../../../../../config/routes/app_routes.dart';
 import '../../../../../core/utils/app_styels.dart';
 import '../../../../../core/widgets/app_text_button.dart';
 import '../../../../../core/widgets/text_form_field.dart';
@@ -78,7 +79,9 @@ class _SigninScreenBodySectionState extends State<SigninTextFormFieldSection> {
         const RememberMeAndForgetPasswordRowSection(),
         24.vs,
         AppTextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.bottomNavigationBar);
+          },
           backgroundColor: AppColors.mainButtonBlueColor,
           buttonWidth: 327.w,
           buttonHeight: 65.h,
